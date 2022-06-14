@@ -31,7 +31,7 @@
 
         combo_caps {
             timeout-ms = <50>;
-            key-positions = <17 18 19>;
+            key-positions = <17 18>;
             bindings = <&kp CAPS>;
         };
         
@@ -64,7 +64,7 @@
 //                               | NUM/ESC | ARR/SPC |                | ARR/BSP | SYM/ENT |
 		bindings = <
 		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
-		&mt LALT A &mt RALT S &mt LSHFT D &mt LCTL F &mt LGUI G 	&mt LGUI H &mt LCTL J &mt LSHFT K &mt RALT L &mt LALT ; 
+		&mt LALT A &mt RALT S &mt LSHFT D &mt LCTL F &mt LGUI G 	&mt LGUI H &mt LCTL J &mt LSHFT K &mt RALT L &mt LALT SEMI
 		&mt LSFT Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp CMMA &kp DOT &mt LSFT RET
           			&mt NUMBER ESC &mt ARROWS SPACE  				&mt ARROWS BSPC &mt SYSTEM ENTER 
 		>;

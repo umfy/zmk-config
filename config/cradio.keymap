@@ -134,7 +134,7 @@
 //    
 		bindings = <
 		&reset &trans &trans &trans &trans					&trans &bt BT_PRV &bt BT_CLR &bt BT_NXT &reset
-		&reset &trans &to QWERTY &to COLMAK &trans			&trans &bt BT_SEL 3 &bt BT_SEL 4 &trans &reset
+		&reset &trans &trans &trans &trans			&trans &bt BT_SEL 3 &bt BT_SEL 4 &trans &reset
 		&bootloader &trans &trans &trans &trans 			&trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bootloader 
 					  		  &trans  &trans 				&trans &trans
 		>;

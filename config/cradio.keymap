@@ -52,7 +52,7 @@
 		&kp Q &kp W &kp F &kp P &kp B 						        &kp J &kp L  &kp U    &kp Y   &kp BSPC 
 		&mt LALT A &mt RALT R &mt LSHFT S &mt LCTL T &mt LGUI G 	&mt LGUI M &mt LCTL N &mt LSHFT E &mt RALT I &mt LALT O 
 		&mt LSFT Z &kp X &kp C &kp D &kp V				            &kp K &kp H  &kp CMMA &kp DOT &kp SLASH
-          				&lt NUMBER ESC &lt ARROWS SPACE  				&lt ARROWS BSPC &lt SYSTEM ENTER 
+          				&lt NUMBER ENTER &lt ARROWS SPACE  				&lt ARROWS TAB &lt SYMBOL ESC 
 		>;
 		};
 
@@ -65,8 +65,8 @@
 		bindings = <
 		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
 		&mt LALT A &mt RALT S &mt LSHFT D &mt LCTL F &mt LGUI G 	&mt LGUI H &mt LCTL J &mt LSHFT K &mt RALT L &mt LALT SEMI
-		&mt LSFT Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp CMMA &kp DOT &mt LSFT RET
-          			&lt NUMBER ESC &lt ARROWS SPACE  				&lt ARROWS BSPC &lt SYSTEM ENTER 
+		&kp Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp COMMA &kp DOT &kp SLASH
+          			&lt NUMBER ENTER &lt ARROWS SPACE  				&lt ARROWS TAB &lt SYMBOL ESC
 		>;
 		};
 

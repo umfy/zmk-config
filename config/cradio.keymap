@@ -100,17 +100,17 @@
 		
 		    number_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    Q    |    W    |    E    |    R    |    T    |                |    Y    |    U    |    I    |    O    |    P    |
-// |    A    |    S    |    D    |    F    |    G    |                |    H    |    J    |    K    |    L    |    ;    |
-// |    Z    |    X    |    C    |    V    |    B    |                |    N    |    M    |    ,    |    .    |    /    |
+// |    Q    |    W    |    E    |    R    |    T    |                |    Y    |    7    |    8    |    9    |    P    |
+// |    A    |    S    |    D    |    F    |    G    |                |    H    |    4    |    5    |    6    |    ;    |
+// |    Z    |    X    |    C    |    V    |    B    |                |    N    |    1    |    2    |    3    |    /    |
 //    
 		bindings = <
-		&kp N1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5		&kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 
-		&kp TAB    &kp LC(S)    &kp DQT      &kp PIPE2     &kp HASH 		&kp MINUS &kp EQL  &kp LBKT &kp RBKT  &kp DEL 
-		&kp ESC    &kp TILDE 	&kp NON_US_BSLH &kp NON_US_HASH  &kp TILDE2 	&kp MINUS &kp GRAVE &kp LBKT &kp RBKT  &kp DEL 
-					    &mo 1  &kp LGUI  					&kp RGUI &mo 2 
+		&kp ESC &kp COMMA &kp DOT &kp ENTER &kp DOLLAR 							&kp N0 &kp N7   &kp N8   &kp N9  &kp BSPC
+		&kp PERCENT &kp MINUS &kp PLUS &kp EQUAL &kp CARET						&kp PLUS &kp N4  &kp N5 &kp N6 &kp MINUS 
+		&kp LBKT  &kp SLASH &kp ASTERISK &kp RBKT   &kp AT_SIGN    				&kp TILDE &kp SEMICOLON &kp LT &kp GT  &kp EXCL
+					  &lt SYSTEM ENTER &kp SPACE  										&lt NUMBER TAB   &trans 
 		>;
-		};
+		};	
         
        		system_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------

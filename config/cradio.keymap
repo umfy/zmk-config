@@ -104,11 +104,10 @@
 // |    A    |    S    |    D    |    F    |    G    |                |    H    |    4    |    5    |    6    |    ;    |
 // |    Z    |    X    |    C    |    V    |    B    |                |    N    |    1    |    2    |    3    |    /    |
 //    
-		bindings = <
-		&kp ESC &kp COMMA &kp DOT &kp ENTER &kp DOLLAR 							&kp N0 &kp N7   &kp N8   &kp N9  &kp BSPC
-		&kp PERCENT &kp MINUS &kp PLUS &kp EQUAL &kp CARET						&kp PLUS &kp N4  &kp N5 &kp N6 &kp MINUS 
-		&kp LBKT  &kp SLASH &kp ASTERISK &kp RBKT   &kp AT_SIGN    				&kp TILDE &kp SEMICOLON &kp LT &kp GT  &kp EXCL
-					  &lt SYSTEM ENTER &kp SPACE  										&lt NUMBER TAB   &trans 
+		&kp GRAVE  &kp DQT &kp SQT  &kp HASH  &kp DOLLAR    					&kp AMPS  &kp PERCENT &kp LBRC &kp RBRC &kp RPRN 
+		&kp UNDERSCORE  &kp MINUS  &kp PLUS  &kp EQUAL  &kp BACKSLASH 			&kp PIPE &kp COLON  &kp LPAR  &kp RPAR   &kp QMARK
+		&bt LBKT  &kp SLASH &kp ASTERISK &kp RBKT &kp UNDERSCORE   				&kp MINUS &kp N1  &kp N2  &kp N3 &kp SLASH   
+					 &lt FMWARE ENTER &kp SPACE 								&kp SPACE &lt SYSTEM N0 
 		>;
 		};	
         

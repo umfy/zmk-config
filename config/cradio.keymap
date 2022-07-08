@@ -72,15 +72,15 @@
 
        		arrows_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    Q    |    W    |    E    |    R    |    T    |                |    Y    |    U    |    ⬆    |    O    |    P    |
-// |    A    |   LALT  |    D    |    F    |    G    |                |    H    |    ⬅    |    ⬇    |    →    |    ;    |
-// |    Z    |    X    |    C    |    V    |    B    |                |    N    |  CTL ←  |    ⬇    |  CTL →  |    /    |
+// |   ESC   |   DEL   |   BSPC  |  ENTER  | CTRL Y  |                | PG UP   |   HOME  |    ⬆    |   END   |   BSPC  |
+// |   TAB   |  LALT   |  LSHFT  |  LCTRL  |  LGUI   |                | PG DN   |    ⬅    |    ⬇    |    →    |         |
+// | CTRL Z  | CTRL X  | CTRL C  | CTRL D  | CTRL V  |                |    [    |  CTL ←  |    ⬇    |  CTL →  |    ]    |
 //    
 		bindings = <
-		&bootloader  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5		&kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 
-		&reset    &kp LC(S)    &kp DQT      &kp PIPE2     &kp HASH 		&kp MINUS &kp EQL  &kp LBKT &kp RBKT  &kp DEL 
-		&kp ESC    &kp TILDE 	&kp NON_US_BSLH &kp NON_US_HASH  &kp TILDE2 	&kp MINUS &kp GRAVE &kp LBKT &kp RBKT  &kp DEL 
-					    &mo 1  &kp LGUI  					&kp RGUI &mo 2 
+		&kp ESC &kp DEL &kp BSPC &kp ENTER &kp LC(Y)				&kp PG_UP &kp HOME  &kp UP    &kp END   &kp BSPC 
+		&kp TAB &kp LALT &kp LSHFT &kp LCTRL &kp LGUI 	            &kp PG_DN  &kp LEFT &kp DOWN &kp RIGHT &kp INS
+		&mt LSFT Z &kp X &kp C &kp V &kp B				            &kp LBKT &kp LC(LEFT)  &kp DOWN &kp LC(RIGHT) &kp RBKT
+          			&kp ENTER &kp SPACE  							&kp TAB &lt NUMBER ESC
 		>;
 		};
 		

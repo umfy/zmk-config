@@ -47,12 +47,12 @@
 // |    Q    |    W    |    F    |    P    |    B    |                |    J    |    L    |    U    |    Y    |   BSP   |
 // |    A    |    R    |    S    |    T    |    G    |                |    M    |    N    |    E    |    I    |    O    |
 // |    Z    |    X    |    C    |    D    |    V    |                |    K    |    H    |    ,    |    .    |    /    |
-//                               | NUM/ENT | ARR/SPC |                | ARR/TAB | SYM/ESC |
+//                               | NUM/ESC | ARR/SPC |                | ARR/BSP | SYM/ENT |
 		bindings = <
 		&kp Q &kp W &kp F &kp P &kp B 						        &kp J &kp L  &kp U    &kp Y   &kp BSPC 
 		&mt LALT A &mt RALT R &mt LSHFT S &mt LCTL T &mt LGUI G 	&mt LGUI M &mt LCTL N &mt LSHFT E &mt RALT I &mt LALT O 
 		&mt LSFT Z &kp X &kp C &kp D &kp V				            &kp K &kp H  &kp CMMA &kp DOT &kp SLASH
-          				&lt NUMBER ENTER &lt ARROWS SPACE  				&lt ARROWS TAB &lt SYMBOL ESC 
+          				&lt NUMBER ESC &lt ARROWS SPACE  				&lt ARROWS BSPC &lt SYSTEM ENTER 
 		>;
 		};
 
@@ -65,52 +65,54 @@
 		bindings = <
 		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
 		&mt LALT A &mt RALT S &mt LSHFT D &mt LCTL F &mt LGUI G 	&mt LGUI H &mt LCTL J &mt LSHFT K &mt RALT L &mt LALT SEMI
-		&kp Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp COMMA &kp DOT &kp SLASH
-          			&lt NUMBER ENTER &lt ARROWS SPACE  				&lt ARROWS TAB &lt SYMBOL ESC
+		&mt LSFT Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp CMMA &kp DOT &mt LSFT RET
+          			&lt NUMBER ESC &lt ARROWS SPACE  				&lt ARROWS BSPC &lt SYSTEM ENTER 
 		>;
 		};
 
        		arrows_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |   ESC   |   DEL   |   BSPC  |  ENTER  | CTRL Y  |                | PG UP   |   HOME  |    ⬆    |   END   |   BSPC  |
-// |   TAB   |  LALT   |  LSHFT  |  LCTRL  |  LGUI   |                | PG DN   |    ⬅    |    ⬇    |    →    |         |
-// | CTRL Z  | CTRL X  | CTRL C  | CTRL D  | CTRL V  |                |    [    |  CTL ←  |    ⬇    |  CTL →  |    ]    |
+// |    Q    |    W    |    E    |    R    |    T    |                |    Y    |    U    |    ⬆    |    O    |    P    |
+// |    A    |   LALT  |    D    |    F    |    G    |                |    H    |    ⬅    |    ⬇    |    →    |    ;    |
+// |    Z    |    X    |    C    |    V    |    B    |                |    N    |  CTL ←  |    ⬇    |  CTL →  |    /    |
 //    
 		bindings = <
-		&kp Q &kp W &kp F &kp P &kp B 						        &kp J &kp L  &kp U    &kp Y   &kp BSPC 
-		&mt LALT A &mt RALT R &mt LSHFT S &mt LCTL T &mt LGUI G 	&mt LGUI M &mt LCTL N &mt LSHFT E &mt RALT I &mt LALT O 
-		&mt LSFT Z &kp X &kp C &kp D &kp V				            &kp K &kp H  &kp CMMA &kp DOT &kp SLASH
-          				&lt NUMBER ENTER &lt ARROWS SPACE  				&lt ARROWS TAB &lt SYMBOL ESC 
+		&bootloader  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5		&kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 
+		&reset    &kp LC(S)    &kp DQT      &kp PIPE2     &kp HASH 		&kp MINUS &kp EQL  &kp LBKT &kp RBKT  &kp DEL 
+		&kp ESC    &kp TILDE 	&kp NON_US_BSLH &kp NON_US_HASH  &kp TILDE2 	&kp MINUS &kp GRAVE &kp LBKT &kp RBKT  &kp DEL 
+					    &mo 1  &kp LGUI  					&kp RGUI &mo 2 
 		>;
 		};
 		
 		    symbol_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    `    |    "    |    '    |    R    |    T    |                |    &    |    U    |    I    |    O    |    P    |
-// |    A    |    S    |    D    |    F    |    G    |                |    |    |    J    |    K    |    L    |    ;    |
-// |    Z    |    X    |    C    |    V    |    B    |                |    ~    |    M    |    ,    |    .    |    /    |
+// |    Q    |    W    |    E    |    R    |    T    |                |    Y    |    U    |    I    |    O    |    P    |
+// |    A    |    S    |    D    |    F    |    G    |                |    H    |    J    |    K    |    L    |    ;    |
+// |    Z    |    X    |    C    |    V    |    B    |                |    N    |    M    |    ,    |    .    |    /    |
 //    
 		bindings = <
-		&kp Q &kp W &kp F &kp P &kp B 						        &kp J &kp L  &kp U    &kp Y   &kp BSPC 
-		&mt LALT A &mt RALT R &mt LSHFT S &mt LCTL T &mt LGUI G 	&mt LGUI M &mt LCTL N &mt LSHFT E &mt RALT I &mt LALT O 
-		&mt LSFT Z &kp X &kp C &kp D &kp V				            &kp K &kp H  &kp CMMA &kp DOT &kp SLASH
-          				&lt NUMBER ENTER &lt ARROWS SPACE  				&lt ARROWS TAB &lt SYMBOL ESC 
+		&kp BANG  &kp ATSN &kp HASH  &kp DLLR  &kp PRCT    			&kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN 
+		&kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN 			&kp MINUS &kp KP_EQUAL  &kp LBRC  &kp RBRC   &kp BKSP
+		&kp LSFT  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp UNDER &kp LEFT &kp DOWN &kp UP  &kp RIGHT
+					  &mo 3 &kp LCTL  				&kp SPC  &mo 2 
 		>;
-		};
+		};	
 		
 		    number_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    Q    |    W    |    E    |    R    |    T    |                |    Y    |    7    |    8    |    9    |    P    |
-// |    A    |    S    |    D    |    F    |    G    |                |    H    |    4    |    5    |    6    |    ;    |
-// |    Z    |    X    |    C    |    V    |    B    |                |    N    |    1    |    2    |    3    |    /    |
+// |    Q    |    W    |    E    |    R    |    T    |                |    Y    |    U    |    I    |    O    |    P    |
+// |    A    |    S    |    D    |    F    |    G    |                |    H    |    J    |    K    |    L    |    ;    |
+// |    Z    |    X    |    C    |    V    |    B    |                |    N    |    M    |    ,    |    .    |    /    |
 //    
 		bindings = <
-		&kp Q &kp W &kp F &kp P &kp B 						        &kp J &kp L  &kp U    &kp Y   &kp BSPC 
-		&mt LALT A &mt RALT R &mt LSHFT S &mt LCTL T &mt LGUI G 	&mt LGUI M &mt LCTL N &mt LSHFT E &mt RALT I &mt LALT O 
-		&mt LSFT Z &kp X &kp C &kp D &kp V				            &kp K &kp H  &kp CMMA &kp DOT &kp SLASH
-          				&lt NUMBER ENTER &lt ARROWS SPACE  				&lt ARROWS TAB &lt SYMBOL ESC 
+		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5 			&trans &trans   &trans   &trans  &trans
+		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5  						&trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
+		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7   				&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
+					 &trans &trans  					&trans &trans 
 		>;
-		};
+		};	
+        
+	};
 
        		system_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -119,10 +121,10 @@
 // |    Z    |    X    |    C    |    V    |    B    |                |    N    |    M    |    ,    |    .    |    /    |
 //    
 		bindings = <
-		&kp Q &kp W &kp F &kp P &kp B 						        &kp J &kp L  &kp U    &kp Y   &kp BSPC 
-		&mt LALT A &mt RALT R &mt LSHFT S &mt LCTL T &mt LGUI G 	&mt LGUI M &mt LCTL N &mt LSHFT E &mt RALT I &mt LALT O 
-		&mt LSFT Z &kp X &kp C &kp D &kp V				            &kp K &kp H  &kp CMMA &kp DOT &kp SLASH
-          				&lt NUMBER ENTER &lt ARROWS SPACE  				&lt ARROWS TAB &lt SYMBOL ESC 
+		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5		&kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 
+		&kp TAB    &kp LC(S)    &kp DQT      &kp PIPE2     &kp HASH 		&kp MINUS &kp EQL  &kp LBKT &kp RBKT  &kp DEL 
+		&kp ESC    &kp TILDE 	&kp NON_US_BSLH &kp NON_US_HASH  &kp TILDE2 	&kp MINUS &kp GRAVE &kp LBKT &kp RBKT  &kp DEL 
+					    &mo 1  &kp LGUI  					&kp RGUI &mo 2 
 		>;
 		};
 
@@ -133,10 +135,10 @@
 // |    Z    |    X    |    C    |    V    |    B    |                |    N    |    M    |    ,    |    .    |    /    |
 //    
 		bindings = <
-		&kp Q &kp W &kp F &kp P &kp B 						        &kp J &kp L  &kp U    &kp Y   &kp BSPC 
-		&mt LALT A &mt RALT R &mt LSHFT S &mt LCTL T &mt LGUI G 	&mt LGUI M &mt LCTL N &mt LSHFT E &mt RALT I &mt LALT O 
-		&mt LSFT Z &kp X &kp C &kp D &kp V				            &kp K &kp H  &kp CMMA &kp DOT &kp SLASH
-          				&lt NUMBER ENTER &lt ARROWS SPACE  				&lt ARROWS TAB &lt SYMBOL ESC 
+		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5		&kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 
+		&kp TAB    &kp LC(S)    &kp DQT      &kp PIPE2     &kp HASH 		&kp MINUS &kp EQL  &kp LBKT &kp RBKT  &kp DEL 
+		&kp ESC    &kp TILDE 	&kp NON_US_BSLH &kp NON_US_HASH  &kp TILDE2 	&kp MINUS &kp GRAVE &kp LBKT &kp RBKT  &kp DEL 
+					    &mo 1  &kp LGUI  					&kp RGUI &mo 2 
 		>;
 		};
 };

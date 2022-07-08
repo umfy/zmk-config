@@ -52,7 +52,7 @@
 		&kp Q &kp W &kp F &kp P &kp B 						        &kp J &kp L  &kp U    &kp Y   &kp BSPC 
 		&mt LALT A &mt RALT R &mt LSHFT S &mt LCTL T &mt LGUI G 	&mt LGUI M &mt LCTL N &mt LSHFT E &mt RALT I &mt LALT O 
 		&mt LSFT Z &kp X &kp C &kp D &kp V				            &kp K &kp H  &kp CMMA &kp DOT &kp SLASH
-          				&lt NUMBER ENTER &lt ARROWS SPACE  				&lt ARROWS TAB &lt SYSTEM ESC 
+          				&lt NUMBER ENTER &lt ARROWS SPACE  				&lt ARROWS TAB &lt SYMBOL ESC 
 		>;
 		};
 
@@ -66,7 +66,7 @@
 		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
 		&mt LALT A &mt RALT S &mt LSHFT D &mt LCTL F &mt LGUI G 	&mt LGUI H &mt LCTL J &mt LSHFT K &mt RALT L &mt LALT SEMI
 		&kp Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp COMMA &kp DOT &kp SLASH
-          			&lt NUMBER ENTER &lt ARROWS SPACE  				&lt ARROWS TAB &lt SYSTEM ESC
+          			&lt NUMBER ENTER &lt ARROWS SPACE  				&lt ARROWS TAB &lt SYMBOL ESC
 		>;
 		};
 
@@ -77,10 +77,10 @@
 // | CTRL Z  | CTRL X  | CTRL C  | CTRL D  | CTRL V  |                |    [    |  CTL ←  |    ⬇    |  CTL →  |    ]    |
 //    
 		bindings = <
-		&kp ESC &kp DEL &kp BSPC &kp ENTER &kp LC(Y)				&kp PG_UP &kp HOME  &kp UP    &kp END   &kp BSPC 
-		&kp TAB &kp LALT &kp LSHFT &kp LCTRL &kp LGUI 	            &kp PG_DN  &kp LEFT &kp DOWN &kp RIGHT &kp INS
-		&mt LSFT Z &kp X &kp C &kp V &kp B				            &kp LBKT &kp LC(LEFT)  &kp DOWN &kp LC(RIGHT) &kp RBKT
-          			&kp ENTER &kp SPACE  							&kp TAB &lt NUMBER ESC
+		&kp Q &kp W &kp F &kp P &kp B 						        &kp J &kp L  &kp U    &kp Y   &kp BSPC 
+		&mt LALT A &mt RALT R &mt LSHFT S &mt LCTL T &mt LGUI G 	&mt LGUI M &mt LCTL N &mt LSHFT E &mt RALT I &mt LALT O 
+		&mt LSFT Z &kp X &kp C &kp D &kp V				            &kp K &kp H  &kp CMMA &kp DOT &kp SLASH
+          				&lt NUMBER ENTER &lt ARROWS SPACE  				&lt ARROWS TAB &lt SYMBOL ESC 
 		>;
 		};
 		
@@ -91,12 +91,12 @@
 // |    Z    |    X    |    C    |    V    |    B    |                |    ~    |    M    |    ,    |    .    |    /    |
 //    
 		bindings = <
-		&kp GRAVE  &kp DQT &kp SQT  &kp HASH  &kp DOLLAR    					&kp AMPS  &kp PERCENT &kp LBRC &kp RBRC &kp RPRN 
-		&kp UNDERSCORE  &kp MINUS  &kp PLUS  &kp EQUAL  &kp BACKSLASH 			&kp PIPE &kp COLON  &kp LPAR  &kp RPAR   &kp QMARK
-		&kp LBKT  &kp SLASH &kp ASTERISK &kp RBKT   &kp AT_SIGN    				&kp TILDE &kp SEMICOLON &kp LT &kp GT  &kp EXCL
-					  &lt SYSTEM ENTER &kp SPACE  										&lt NUMBER TAB   &trans 
+		&kp Q &kp W &kp F &kp P &kp B 						        &kp J &kp L  &kp U    &kp Y   &kp BSPC 
+		&mt LALT A &mt RALT R &mt LSHFT S &mt LCTL T &mt LGUI G 	&mt LGUI M &mt LCTL N &mt LSHFT E &mt RALT I &mt LALT O 
+		&mt LSFT Z &kp X &kp C &kp D &kp V				            &kp K &kp H  &kp CMMA &kp DOT &kp SLASH
+          				&lt NUMBER ENTER &lt ARROWS SPACE  				&lt ARROWS TAB &lt SYMBOL ESC 
 		>;
-		};	
+		};
 		
 		    number_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -105,14 +105,12 @@
 // |    Z    |    X    |    C    |    V    |    B    |                |    N    |    1    |    2    |    3    |    /    |
 //    
 		bindings = <
-		&kp ESC &kp COMMA &kp DOT &kp ENTER &kp DOLLAR 			&kp N0 &kp N7   &kp N8   &kp N9  &kp BSPC
-		&kp PERCENT &kp MINUS &kp PLUS &kp EQUAL &kp CARET									&kp PLUS &kp N4  &kp N5 &kp N6 &kp MINUS 
-		&bt LBKT  &kp SLASH &kp ASTERISK &kp RBKT &kp UNDERSCORE   						&kp MINUS &kp N1  &kp N2  &kp N3 &kp SLASH   
-					 &lt FMWARE ENTER &kp SPACE 										&kp SPACE &lt SYSTEM N0 
+		&kp Q &kp W &kp F &kp P &kp B 						        &kp J &kp L  &kp U    &kp Y   &kp BSPC 
+		&mt LALT A &mt RALT R &mt LSHFT S &mt LCTL T &mt LGUI G 	&mt LGUI M &mt LCTL N &mt LSHFT E &mt RALT I &mt LALT O 
+		&mt LSFT Z &kp X &kp C &kp D &kp V				            &kp K &kp H  &kp CMMA &kp DOT &kp SLASH
+          				&lt NUMBER ENTER &lt ARROWS SPACE  				&lt ARROWS TAB &lt SYMBOL ESC 
 		>;
-		};	
-        
-	};
+		};
 
        		system_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -121,10 +119,10 @@
 // |    Z    |    X    |    C    |    V    |    B    |                |    N    |    M    |    ,    |    .    |    /    |
 //    
 		bindings = <
-		&trans &kp C_PREV &kp C_PLAY_PAUSE  &kp C_NEXT &trans 						&trans &kp F7 &kp F8 &kp F9 &kp F10
-		&kp PSCRN &kp LALT &kp LSHFT &kp LCTRL &kp LGUI 							&trans  &kp F4  &kp F5 &kp F6  &kp F11 
-		&kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &kp C_BRI_DN  &kp C_BRI_UP 			&trans  &kp F1 &kp F2 &kp F3  &kp F12 
-					    &trans  &kp SPACE  											&mo FMWARE &trans
+		&kp Q &kp W &kp F &kp P &kp B 						        &kp J &kp L  &kp U    &kp Y   &kp BSPC 
+		&mt LALT A &mt RALT R &mt LSHFT S &mt LCTL T &mt LGUI G 	&mt LGUI M &mt LCTL N &mt LSHFT E &mt RALT I &mt LALT O 
+		&mt LSFT Z &kp X &kp C &kp D &kp V				            &kp K &kp H  &kp CMMA &kp DOT &kp SLASH
+          				&lt NUMBER ENTER &lt ARROWS SPACE  				&lt ARROWS TAB &lt SYMBOL ESC 
 		>;
 		};
 
@@ -135,10 +133,10 @@
 // |    Z    |    X    |    C    |    V    |    B    |                |    N    |    M    |    ,    |    .    |    /    |
 //    
 		bindings = <
-		&reset &trans &trans &trans &trans					&trans &bt BT_PRV &bt BT_CLR &bt BT_NXT &reset
-		&reset &trans &to QWERTY &to COLMAK &trans			&trans &bt BT_SEL 3 &bt BT_SEL 4 &trans &reset
-		&bootloader &trans &trans &trans &trans 			&trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bootloader 
-					  		  &trans  &trans 				&trans &trans
+		&kp Q &kp W &kp F &kp P &kp B 						        &kp J &kp L  &kp U    &kp Y   &kp BSPC 
+		&mt LALT A &mt RALT R &mt LSHFT S &mt LCTL T &mt LGUI G 	&mt LGUI M &mt LCTL N &mt LSHFT E &mt RALT I &mt LALT O 
+		&mt LSFT Z &kp X &kp C &kp D &kp V				            &kp K &kp H  &kp CMMA &kp DOT &kp SLASH
+          				&lt NUMBER ENTER &lt ARROWS SPACE  				&lt ARROWS TAB &lt SYMBOL ESC 
 		>;
 		};
 };

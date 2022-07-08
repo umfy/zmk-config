@@ -108,7 +108,7 @@
 		&kp ESC &kp COMMA &kp DOT &kp ENTER &kp DOLLAR 							&kp N0 &kp N7 &kp N8 &kp N9 &kp BSPC
 		&kp PERCENT &kp MINUS &kp PLUS &kp EQUAL &kp CARET						&kp PLUS &kp N4 &kp N5 &kp N6 &kp MINUS 
 		&bt LBKT  &kp SLASH &kp ASTERISK &kp RBKT &kp UNDERSCORE   				&kp ASTERISK &kp N1 &kp N2 &kp N3 &kp SLASH   
-					 &lt FMWARE ENTER &kp SPACE 								&kp SPACE &lt SYSTEM N0 
+					 &lt SYSTEM ENTER &kp SPACE 								&kp SPACE &lt SYSTEM N0 
 		>;
 		};	
 

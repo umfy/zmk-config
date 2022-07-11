@@ -8,8 +8,9 @@ Keyboard's design and source code: [Ferris Sweep](https://github.com/davidphilip
 Main inspirations for this layout were [getreuer's symbol layer](https://getreuer.info/posts/keyboards/symbol-layer/index.html#my-symbol-layer) and [Miryoku layout](https://github.com/manna-harbour/miryoku).
 
 ## Colemak
-```
 Backspace is positioned in top right on every layer.
+
+```
 // ----------------------------------------------------------------------------------------------------------------------
 // |    Q    |    W    |    F    |    P    |    B    |                |    J    |    L    |    U    |    Y    |  BSPC   |
 // |    A    |    R    |    S    |    T    |    G    |                |    M    |    N    |    E    |    I    |    O    |

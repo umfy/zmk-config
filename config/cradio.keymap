@@ -130,9 +130,9 @@
 
        		fmware_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    Q    |    W    |    E    |    R    |    T    |                |    Y    |    U    |    I    |    O    |    P    |
-// |    A    |    S    |    D    |    F    |    G    |                |    H    |    J    |    K    |    L    |    ;    |
-// |    Z    |    X    |    C    |    V    |    B    |                |    N    |    M    |    ,    |    .    |    /    |
+// |  RESET  |         |         |         |         |                |         | BT PREV |BT CLEAR | BT NEXT |  RESET  |
+// |  RESET  |  GAME   |  QWERTY |  COLMAK |         |                |         |  BT 3   |   BT 4  |         |  RESET  |
+// |  BOOT   |         |         |         |         |                |         |  BT 0   |   BT 1  |   BT 2  |  BOOT   |
 //                               |         |         |                |         |         |
 		bindings = <
 		&reset &trans &trans &trans &trans						&trans &bt BT_PRV &bt BT_CLR &bt BT_NXT &reset
@@ -144,9 +144,9 @@
 
 			game_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    Q    |    W    |    E    |    R    |    T    |                |         |         |         |         |         |
-// |    A    |    S    |    D    |    F    |    G    |                |         | COLMAK  | QWERTY  |         |         |
-// |    Z    |    X    |    C    |    V    |    B    |                |         |         |         |         |         |
+// |   ESC   |    Q    |    W    |    E    |    R    |                |    T    |    Y    |    U    |    I    |    O    |
+// |  LSHFT  |    A    |    S    |    D    |    F    |                |    G    |    H    |    J 	|    K    |    L    |
+// |  LCTRL  |    Z    |    X    |    C    |    V    |                |    B    |    N    |    M    |    ,    |    .    |
 //                               | GAMEALT |  SPACE  |                | ARR/TAB | SYM/ESC |
 		bindings = <
 		&kp ESC &kp Q &kp W &kp E &kp R							&trans &trans &trans &trans &trans
@@ -160,13 +160,13 @@
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // |    0    |    1    |    2    |    3    |    4    |                |    5    |    6    |    7    |    8    |    9    |
 // |   TAB   |    5    |    6    |    T    |    G    |                |         |  COLMAK |  QWERTY |         |         |
-// |   ALT   |    B    |    N    |    M    |    I    |                |         |         |         |         |         |
-//                               |         |  SPACE  |                | ARR/TAB | SYM/ESC |
+// |   ALT   |    B    |    N    |    M    |    P    |                |         |         |         |         |         |
+//                               |         |  SPACE  |                |   TAB   |   ESC   |
 		bindings = <
 		&kp N0 &kp N1 &kp N2 &kp N3 &kp N4						&kp N5 &kp N6 &kp N7 &kp N8 &kp N9	
 		&kp TAB &kp N5 &kp N6 &kp T &kp G						&trans &to COLMAK &to QWERTY &trans &trans
 		&kp LALT &kp B &kp N &kp M &kp I 						&trans &trans &trans &trans &trans
-					  		  &trans  &kp SPACE 				&lt ARROWS TAB &lt SYMBOL ESC
+					  		  &trans  &kp SPACE 				&kp TAB &kp ESC
 		>;
 		};
 	};

@@ -147,7 +147,7 @@
 // // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // |         |   PREV  |  PAUSE  |   NEXT  |         |                |         |   F7    |   F8    |   F9    |   F10   |
 // |  PSCRN  |  LALT   |  LSHFT  |  LCTRL  |  LGUI   |                |         |   F4    |   F5    |   F6    |   F11   |
-// |   MUTE  |    X    |    C    |    V    |    B    |                |         |   F1    |   F2    |   F3    |   F12   |
+// |   MUTE  | VOL DN  |  VOL UP |  BRI UP | BRI DN  |                |         |   F1    |   F2    |   F3    |   F12   |
 //                               |         | FMWARE  |                | FMWARE  |         |
 		bindings = <
 		&trans &kp C_PREV &kp C_PLAY_PAUSE  &kp C_NEXT &trans 					&trans &kp F7 &kp F8 &kp F9 &kp F10

@@ -1,7 +1,7 @@
 # umfy-sweep
 
 My Ferris sweep ZMK layout
-![Keyboard Image](./images/keyboard.png?raw=true "keyboard")
+![Keyboard Image](./images/keyboard.jpg?raw=true "keyboard")
 
 Keyboard's design and source code: [Ferris Sweep](https://github.com/davidphilipbarr/Sweep).
 

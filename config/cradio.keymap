@@ -49,11 +49,11 @@
 // |    Q    |    W    |    F    |    P    |    B    |                |    J    |    L    |    U    |    Y    |   BSP   |
 // |    A    |    R    |    S    |    T    |    G    |                |    M    |    N    |    E    |    I    |    O    |
 // |    Z    |    X    |    C    |    D    |    V    |                |    K    |    H    |    ,    |    .    |    /    |
-//                               | NUM/ESC | ARR/SPC |                | ARR/BSP | SYM/ENT |
+//                               | NUM/ENT | ARR/SPC |                | ARR/TAB | SYM/ESC |
 		bindings = <
-		&kp Q &kp W &kp F &kp P &kp B 						        &kp J &kp L  &kp U    &kp Y   &kp BSPC 
-		&mt LALT A &mt RALT R &mt LSHFT S &mt LCTL T &mt LGUI G 	&mt LGUI M &mt LCTL N &mt LSHFT E &mt RALT I &mt LALT O 
-		&mt LSFT Z &kp X &kp C &kp D &kp V				            &kp K &kp H  &kp CMMA &kp DOT &kp SLASH
+		&kp Q &kp W &kp F &kp P &kp B 						      		&kp J &kp L  &kp U    &kp Y   &kp BSPC 
+		&mt LALT A &mt RALT R &mt LSHFT S &mt LCTL T &mt LGUI G 		&mt LGUI M &mt LCTL N &mt LSHFT E &mt RALT I &mt LALT O 
+		&mt LSFT Z &kp X &kp C &kp D &kp V				          		&kp K &kp H  &kp CMMA &kp DOT &kp SLASH
           				&lt NUMBER ENTER &lt ARROWS SPACE  				&lt ARROWS TAB &lt SYMBOL ESC 
 		>;
 		};
@@ -63,35 +63,35 @@
 // |    Q    |    W    |    E    |    R    |    T    |                |    Y    |    U    |    I    |    O    |    P    |
 // |    A    |    S    |    D    |    F    |    G    |                |    H    |    J    |    K    |    L    |    ;    |
 // |    Z    |    X    |    C    |    V    |    B    |                |    N    |    M    |    ,    |    .    |    /    |
-//                               | NUM/ESC | ARR/SPC |                | ARR/BSP | SYM/ENT |
+//                               | NUM/ENT | ARR/SPC |                | ARR/TAB | SYM/ESC |
 		bindings = <
-		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
-		&mt LALT A &mt RALT S &mt LSHFT D &mt LCTL F &mt LGUI G 	&mt LGUI H &mt LCTL J &mt LSHFT K &mt RALT L &mt LALT SEMI
-		&kp Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp COMMA &kp DOT &kp SLASH
-          			&lt NUMBER ENTER &lt ARROWS SPACE  				&lt ARROWS TAB &lt SYMBOL ESC
+		&kp Q &kp W &kp E &kp R &kp T 									&kp Y &kp U  &kp I    &kp O   &kp P 
+		&mt LALT A &mt RALT S &mt LSHFT D &mt LCTL F &mt LGUI G 		&mt LGUI H &mt LCTL J &mt LSHFT K &mt RALT L &mt LALT SEMI
+		&kp Z &kp X &kp C &kp V &kp B				       				&kp N &kp M  &kp COMMA &kp DOT &kp SLASH
+          			&lt NUMBER ENTER &lt ARROWS SPACE  					&lt ARROWS TAB &lt SYMBOL ESC
 		>;
 		};
 
        		arrows_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // |   ESC   |   DEL   |   BSPC  |  ENTER  | CTRL Y  |                | PG UP   |   HOME  |    ⬆    |   END   |   BSPC  |
-// |   TAB   |  LALT   |  LSHFT  |  LCTRL  |  LGUI   |                | PG DN   |    ⬅    |    ⬇    |    →    |         |
+// |   TAB   |  LALT   |  LSHFT  |  LCTRL  |  LGUI   |                | PG DN   |    ⬅    |    ⬇    |    →    |   INS   |
 // | CTRL Z  | CTRL X  | CTRL C  | CTRL D  | CTRL V  |                |    [    |  CTL ←  |    ⬇    |  CTL →  |    ]    |
-//    
+//                               |  ENTER  |  SPACE  |                |   TAB   | NUM/ESC |
 		bindings = <
-		&kp ESC &kp DEL &kp BSPC &kp ENTER &kp LC(Y)				&kp PG_UP &kp HOME  &kp UP    &kp END   &kp BSPC 
-		&kp TAB &kp LALT &kp LSHFT &kp LCTRL &kp LGUI 	            &kp PG_DN  &kp LEFT &kp DOWN &kp RIGHT &kp INS
-		&kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(D) &kp LC(V)			&kp LBKT &kp LC(LEFT)  &kp DOWN &kp LC(RIGHT) &kp RBKT
-          			&kp ENTER &kp SPACE  							&kp TAB &lt NUMBER ESC
+		&kp ESC &kp DEL &kp BSPC &kp ENTER &kp LC(Y)					&kp PG_UP &kp HOME  &kp UP    &kp END   &kp BSPC 
+		&kp TAB &kp LALT &kp LSHFT &kp LCTRL &kp LGUI 	          	  	&kp PG_DN  &kp LEFT &kp DOWN &kp RIGHT &kp INS
+		&kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(D) &kp LC(V)				&kp LBKT &kp LC(LEFT)  &kp DOWN &kp LC(RIGHT) &kp RBKT
+          			&kp ENTER &kp SPACE  								&kp TAB &lt NUMBER ESC
 		>;
 		};
 		
 		    symbol_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    Q    |    W    |    E    |    R    |    T    |                |    Y    |    U    |    I    |    O    |    P    |
-// |    A    |    S    |    D    |    F    |    G    |                |    H    |    J    |    K    |    L    |    ;    |
-// |    Z    |    X    |    C    |    V    |    B    |                |    N    |    M    |    ,    |    .    |    /    |
-//    
+// |    `    |    "    |    '    |    #    |    $    |                |    &    |    %    |    {    |    }    |   BSPC  |
+// |    _    |    -    |    +    |    =    |    \    |                |    |    |    :    |    (    |    )    |    ?    |
+// |    [    |    /    |    *    |    ]    |    @    |                |    ~    |    ;    |    <    |    >    |    !    |
+//                               | SYS/ENT |  SPACE  |                | NUM/TAB |         | 
 		bindings = <
 		&kp GRAVE  &kp DQT &kp SQT  &kp HASH  &kp DOLLAR    					&kp AMPS  &kp PERCENT &kp LBRC &kp RBRC &kp BSPC 
 		&kp UNDERSCORE  &kp MINUS  &kp PLUS  &kp EQUAL  &kp BACKSLASH 			&kp PIPE &kp COLON  &kp LPAR  &kp RPAR   &kp QMARK
@@ -102,29 +102,29 @@
 		
 		    number_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    Q    |    W    |    E    |    R    |    T    |                |    Y    |    7    |    8    |    9    |    P    |
-// |    A    |    S    |    D    |    F    |    G    |                |    H    |    4    |    5    |    6    |    ;    |
-// |    Z    |    X    |    C    |    V    |    B    |                |    N    |    1    |    2    |    3    |    /    |
-//    
+// |   ESC   |    ,    |    .    |   ENT   |    $    |                |    0    |    7    |    8    |    9    |   BSPC  |
+// |    %    |    -    |    +    |    =    |    ^    |                |    -    |    4    |    5    |    6    |    +    |
+// |    [    |    /    |    *    |    ]    |    _    |                |    /    |    1    |    2    |    3    |    *    |
+//                               | FMW/ENT |  SPACE  |                |  SPACE  | SYS/0 |
 		bindings = <
 		&kp ESC &kp COMMA &kp DOT &kp ENTER &kp DOLLAR 							&kp N0 &kp N7   &kp N8   &kp N9  &kp BSPC
-		&kp PERCENT &kp MINUS &kp PLUS &kp EQUAL &kp CARET						&kp PLUS &kp N4  &kp N5 &kp N6 &kp MINUS 
-		&kp LBKT  &kp SLASH &kp ASTERISK &kp RBKT &kp UNDERSCORE   				&kp MINUS &kp N1  &kp N2  &kp N3 &kp SLASH   
+		&kp PERCENT &kp MINUS &kp PLUS &kp EQUAL &kp CARET						&kp MINUS &kp N4  &kp N5 &kp N6 &kp PLUS 
+		&kp LBKT  &kp SLASH &kp ASTERISK &kp RBKT &kp UNDERSCORE   				&kp SLASH &kp N1  &kp N2  &kp N3 &kp ASTERISK   
 					 &lt FMWARE ENTER &kp SPACE 								&kp SPACE &lt SYSTEM N0 
 		>;
 		};	
         
        		system_layer {
 // // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    Q    |    W    |    E    |    R    |    T    |                |    Y    |    U    |    I    |    O    |    P    |
-// |    A    |    S    |    D    |    F    |    G    |                |    H    |    J    |    K    |    L    |    ;    |
-// |    Z    |    X    |    C    |    V    |    B    |                |    N    |    M    |    ,    |    .    |    /    |
-//    
+// |         |   PREV  |  PAUSE  |   NEXT  |         |                |         |   F7    |   F8    |   F9    |   F10   |
+// |  PSCRN  |  LALT   |  LSHFT  |  LCTRL  |  LGUI   |                |         |   F4    |   F5    |   F6    |   F11   |
+// |   MUTE  |    X    |    C    |    V    |    B    |                |         |   F1    |   F2    |   F3    |   F12   |
+//                               |         | FMWARE  |                | FMWARE  |         |
 		bindings = <
-		&trans &kp C_PREV &kp C_PLAY_PAUSE  &kp C_NEXT &trans 						&trans &kp F7 &kp F8 &kp F9 &kp F10
-		&kp PSCRN &kp LALT &kp LSHFT &kp LCTRL &kp LGUI 							&trans  &kp F4  &kp F5 &kp F6  &kp F11 
-		&kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &kp C_BRI_DN  &kp C_BRI_UP 			&trans  &kp F1 &kp F2 &kp F3  &kp F12 
-					    &trans  &mo FMWARE  											&mo FMWARE &trans
+		&trans &kp C_PREV &kp C_PLAY_PAUSE  &kp C_NEXT &trans 					&trans &kp F7 &kp F8 &kp F9 &kp F10
+		&kp PSCRN &kp LALT &kp LSHFT &kp LCTRL &kp LGUI 						&trans  &kp F4  &kp F5 &kp F6  &kp F11 
+		&kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &kp C_BRI_DN  &kp C_BRI_UP 		&trans  &kp F1 &kp F2 &kp F3  &kp F12 
+					    &trans  &mo FMWARE  									&mo FMWARE &trans
 		>;
 		};
 
@@ -133,39 +133,39 @@
 // |    Q    |    W    |    E    |    R    |    T    |                |    Y    |    U    |    I    |    O    |    P    |
 // |    A    |    S    |    D    |    F    |    G    |                |    H    |    J    |    K    |    L    |    ;    |
 // |    Z    |    X    |    C    |    V    |    B    |                |    N    |    M    |    ,    |    .    |    /    |
-//    
+//                               |         |         |                |         |         |
 		bindings = <
-		&reset &trans &trans &trans &trans					&trans &bt BT_PRV &bt BT_CLR &bt BT_NXT &reset
+		&reset &trans &trans &trans &trans						&trans &bt BT_PRV &bt BT_CLR &bt BT_NXT &reset
 		&reset &to GAME &to QWERTY &to COLMAK &trans			&trans &bt BT_SEL 3 &bt BT_SEL 4 &trans &reset
-		&bootloader &trans &trans &trans &trans 			&trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bootloader 
-					  		  &trans  &trans 				&trans &trans
+		&bootloader &trans &trans &trans &trans 				&trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bootloader 
+					  		  &trans  &trans 					&trans &trans
 		>;
 		};
 
 			game_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    Q    |    W    |    E    |    R    |    T    |                |    Y    |    U    |    I    |    O    |    P    |
-// |    A    |    S    |    D    |    F    |    G    |                |    H    |    J    |    K    |    L    |    ;    |
-// |    Z    |    X    |    C    |    V    |    B    |                |    N    |    M    |    ,    |    .    |    /    |
-//    
+// |    Q    |    W    |    E    |    R    |    T    |                |         |         |         |         |         |
+// |    A    |    S    |    D    |    F    |    G    |                |         | COLMAK  | QWERTY  |         |         |
+// |    Z    |    X    |    C    |    V    |    B    |                |         |         |         |         |         |
+//                               | GAMEALT |  SPACE  |                | ARR/TAB | SYM/ESC |
 		bindings = <
-		&kp ESC &kp Q &kp W &kp E &kp R						&trans &trans &trans &trans &trans
-		&kp LSHFT &kp A &kp S &kp D &kp F					&trans &to COLMAK &to QWERTY &trans &trans
-		&kp LCTL &kp Z &kp X &kp C &kp V 					&trans &trans &trans &trans &trans
-					  		  &mo GAMEALT  &kp SPACE 				&lt ARROWS TAB &lt SYMBOL ESC
+		&kp ESC &kp Q &kp W &kp E &kp R							&trans &trans &trans &trans &trans
+		&kp LSHFT &kp A &kp S &kp D &kp F						&trans &to COLMAK &to QWERTY &trans &trans
+		&kp LCTRL &kp Z &kp X &kp C &kp V 						&trans &trans &trans &trans &trans
+					  		  &mo GAMEALT  &kp SPACE 			&lt ARROWS TAB &lt SYMBOL ESC
 		>;
 		};
 
 			game_alt_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    Q    |    W    |    E    |    R    |    T    |                |    Y    |    U    |    I    |    O    |    P    |
-// |    A    |    S    |    D    |    F    |    G    |                |    H    |    J    |    K    |    L    |    ;    |
-// |    Z    |    X    |    C    |    V    |    B    |                |    N    |    M    |    ,    |    .    |    /    |
-//    
+// |    0    |    1    |    2    |    3    |    4    |                |    5    |    6    |    7    |    8    |    9    |
+// |   TAB   |    5    |    6    |    T    |    G    |                |         |  COLMAK |  QWERTY |         |         |
+// |   ALT   |    B    |    N    |    M    |    I    |                |         |         |         |         |         |
+//                               |         |  SPACE  |                | ARR/TAB | SYM/ESC |
 		bindings = <
-		&kp N0 &kp N1 &kp N2 &kp N3 &kp N4					&kp N5 &kp N6 &kp N7 &kp N8 &kp N9	
-		&kp TAB &kp N5 &kp N6 &kp T &kp G					&trans &to COLMAK &to QWERTY &trans &trans
-		&kp LALT &kp B &kp N &kp M &kp I 					&trans &trans &trans &trans &trans
+		&kp N0 &kp N1 &kp N2 &kp N3 &kp N4						&kp N5 &kp N6 &kp N7 &kp N8 &kp N9	
+		&kp TAB &kp N5 &kp N6 &kp T &kp G						&trans &to COLMAK &to QWERTY &trans &trans
+		&kp LALT &kp B &kp N &kp M &kp I 						&trans &trans &trans &trans &trans
 					  		  &trans  &kp SPACE 				&lt ARROWS TAB &lt SYMBOL ESC
 		>;
 		};

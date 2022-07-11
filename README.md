@@ -1,7 +1,9 @@
 # umfy-sweep
-
-My Ferris sweep ZMK layout
+ 
 ![Keyboard Image](./images/keyboard.jpg?raw=true "keyboard")
+
+My Ferris sweep ZMK layout - fully wireless, ergonomic split keyboard.
+
 
 Keyboard's design and source code: [Ferris Sweep](https://github.com/davidphilipbarr/Sweep).
 
@@ -72,7 +74,7 @@ Select basic keyboard layout and bluetooth options. Reset and Bootloader options
 // |    Q    |    W    |    E    |    R    |    T    |                |    Y    |    U    |    I    |    O    |    P    |
 // |    A    |    S    |    D    |    F    |    G    |                |    H    |    J    |    K    |    L    |    ;    |
 // |    Z    |    X    |    C    |    V    |    B    |                |    N    |    M    |    ,    |    .    |    /    |
-// 
+//                               | NUM/ENT | ARR/SPC |                | ARR/TAB | SYM/ESC |
 ```
 ## Gaming
 Right hand side is irrelevant

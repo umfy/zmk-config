@@ -48,7 +48,7 @@ Enter and Escape are placed like in the Arrows layer.
 // |   ESC   |    ,    |    .    |   ENT   |    $    |                |    0    |    7    |    8    |    9    |   BSPC  |
 // |    %    |    -    |    +    |    =    |    ^    |                |    -    |    4    |    5    |    6    |    +    |
 // |    [    |    /    |    *    |    ]    |    _    |                |    /    |    1    |    2    |    3    |    *    |
-//                               | FMW/ENT |  SPACE  |                |  SPACE  | SYS/0 |
+//                               | FMW/ENT |  SPACE  |                |  SPACE  |  SYS/0  |
 ```
 ## System
 ```       

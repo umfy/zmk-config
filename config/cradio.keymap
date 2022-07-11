@@ -12,13 +12,14 @@
 // Layer definitions
     #define COLMAK 0
     #define QWERTY 1
-    #define ARROWS 2
-    #define SYMBOL 3
-    #define NUMBER 4
-    #define SYSTEM 5
-    #define FMWARE 6
-    #define GAME 7
-    #define GAMEALT 8
+	#define GAME 2
+    #define GAMEALT 3
+    #define ARROWS 4
+    #define SYMBOL 5
+    #define NUMBER 6
+    #define SYSTEM 7
+    #define FMWARE 8
+
 // -----------------
 
 &mt {
@@ -69,6 +70,34 @@
 		&mt LALT A &mt RALT S &mt LSHFT D &mt LCTL F &mt LGUI G 		&mt LGUI H &mt LCTL J &mt LSHFT K &mt RALT L &mt LALT SEMI
 		&kp Z &kp X &kp C &kp V &kp B				       				&kp N &kp M  &kp COMMA &kp DOT &kp SLASH
           			&lt NUMBER ENTER &lt ARROWS SPACE  					&lt ARROWS TAB &lt SYMBOL ESC
+		>;
+		};
+
+			game_layer {
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |   ESC   |    Q    |    W    |    E    |    R    |                |    T    |    Y    |    U    |    I    |    O    |
+// |  LSHFT  |    A    |    S    |    D    |    F    |                |    G    |    H    |    J 	|    K    |    L    |
+// |  LCTRL  |    Z    |    X    |    C    |    V    |                |    B    |    N    |    M    |    ,    |    .    |
+//                               | GAMEALT |  SPACE  |                | ARR/TAB | SYM/ESC |
+		bindings = <
+		&kp ESC &kp Q &kp W &kp E &kp R							&kp T &kp Y  &kp U  &kp I  &kp O 
+		&kp LSHFT &kp A &kp S &kp D &kp F						&kp G &kp H  &kp J  &kp K  &kp L
+		&kp LCTRL &kp Z &kp X &kp C &kp V 						&kp B &kp N  &kp M  &kp CMMA &kp DOT
+					  		  &mo GAMEALT  &kp SPACE 			&lt ARROWS TAB &lt SYMBOL ESC
+		>;
+		};
+
+			game_alt_layer {
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |    0    |    1    |    2    |    3    |    4    |                |    5    |    6    |    7    |    8    |    9    |
+// |   TAB   |    5    |    6    |    T    |    G    |                |   F5    |  COLMAK |  QWERTY |         |   F9    |
+// |   ALT   |    B    |    N    |    M    |    P    |                |         |         |         |         |         |
+//                               |         |  SPACE  |                |   TAB   |   ESC   |
+		bindings = <
+		&kp N0 &kp N1 &kp N2 &kp N3 &kp N4						&kp N5 &kp N6 &kp N7 &kp N8 &kp N9	
+		&kp TAB &kp N5 &kp N6 &kp T &kp G						&kp F5 &to COLMAK &to QWERTY &trans &kp F9
+		&kp LALT &kp B &kp N &kp M &kp P 						&trans &trans &trans &trans &trans
+					  		  &trans  &kp SPACE 				&kp TAB &kp ESC
 		>;
 		};
 
@@ -139,34 +168,6 @@
 		&reset &to GAME &to QWERTY &to COLMAK &trans			&trans &bt BT_SEL 3 &bt BT_SEL 4 &trans &reset
 		&bootloader &trans &trans &trans &trans 				&trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bootloader 
 					  		  &trans  &trans 					&trans &trans
-		>;
-		};
-
-			game_layer {
-// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |   ESC   |    Q    |    W    |    E    |    R    |                |    T    |    Y    |    U    |    I    |    O    |
-// |  LSHFT  |    A    |    S    |    D    |    F    |                |    G    |    H    |    J 	|    K    |    L    |
-// |  LCTRL  |    Z    |    X    |    C    |    V    |                |    B    |    N    |    M    |    ,    |    .    |
-//                               | GAMEALT |  SPACE  |                | ARR/TAB | SYM/ESC |
-		bindings = <
-		&kp ESC &kp Q &kp W &kp E &kp R							&kp T &kp Y  &kp U  &kp I  &kp O 
-		&kp LSHFT &kp A &kp S &kp D &kp F						&kp G &kp H  &kp J  &kp K  &kp L
-		&kp LCTRL &kp Z &kp X &kp C &kp V 						&kp B &kp N  &kp M  &kp CMMA &kp DOT
-					  		  &mo GAMEALT  &kp SPACE 			&lt ARROWS TAB &lt SYMBOL ESC
-		>;
-		};
-
-			game_alt_layer {
-// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |    0    |    1    |    2    |    3    |    4    |                |    5    |    6    |    7    |    8    |    9    |
-// |   TAB   |    5    |    6    |    T    |    G    |                |   F5    |  COLMAK |  QWERTY |         |   F9    |
-// |   ALT   |    B    |    N    |    M    |    P    |                |         |         |         |         |         |
-//                               |         |  SPACE  |                |   TAB   |   ESC   |
-		bindings = <
-		&kp N0 &kp N1 &kp N2 &kp N3 &kp N4						&kp N5 &kp N6 &kp N7 &kp N8 &kp N9	
-		&kp TAB &kp N5 &kp N6 &kp T &kp G						&kp F5 &to COLMAK &to QWERTY &trans &kp F9
-		&kp LALT &kp B &kp N &kp M &kp P 						&trans &trans &trans &trans &trans
-					  		  &trans  &kp SPACE 				&kp TAB &kp ESC
 		>;
 		};
 	};

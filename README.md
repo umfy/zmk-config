@@ -20,13 +20,11 @@ Backspace is positioned in top right on every layer.
 //                               | NUM/ENT | ARR/SPC |                | ARR/TAB | SYM/ESC |
 ```
 ## Arrows
-Ins can be swapped with any key that makes sense here.
-
 Ctrl + Shift + Del and text manipulation with the right hand on the mouse are possible.
 ```
 // ----------------------------------------------------------------------------------------------------------------------
 // |   ESC   |   DEL   |   BSPC  |  ENTER  | CTRL Y  |                | PG UP   |   HOME  |    ⬆    |   END   |   BSPC  |
-// |   TAB   |  LALT   |  LSHFT  |  LCTRL  |  LGUI   |                | PG DN   |    ⬅    |    ⬇    |    →    |   INS   |
+// |   TAB   |  LALT   |  LSHFT  |  LCTRL  |  LGUI   |                | PG DN   |    ⬅    |    ⬇    |    →    |   CAPS  |
 // | CTRL Z  | CTRL X  | CTRL C  | CTRL D  | CTRL V  |                |    [    |  CTL ←  |    ⬇    |  CTL →  |    ]    |
 //                               |  ENTER  |  SPACE  |                |   TAB   | NUM/ESC |
 ```
@@ -52,17 +50,16 @@ Enter and Escape are placed like in the Arrows layer.
 ```
 ## System
 ```       
-// // ----------------------------------------------------------------------------------------------------------------------
-// |         |   PREV  |  PAUSE  |   NEXT  |         |                |         |   F7    |   F8    |   F9    |   F10   |
-// |  PSCRN  |  LALT   |  LSHFT  |  LCTRL  |  LGUI   |                |         |   F4    |   F5    |   F6    |   F11   |
-// |   MUTE  | VOL DN  |  VOL UP |  BRI UP | BRI DN  |                |         |   F1    |   F2    |   F3    |   F12   |
+// ----------------------------------------------------------------------------------------------------------------------
+// |   INS   |   PREV  |  PAUSE  |   NEXT  | CALENDAR|                |   WWW   |   F7    |   F8    |   F9    |   F10   |
+// |  PSCRN  |  LALT   |  LSHFT  |  LCTRL  |  LGUI   |                |  CALC   |   F4    |   F5    |   F6    |   F11   |
+// |   MUTE  | VOL DN  |  VOL UP |  BRI UP | BRI DN  |                |  FILES  |   F1    |   F2    |   F3    |   F12   |
 //                               |         | FMWARE  |                | FMWARE  |         |
-```
 ## Firmware
 Select basic keyboard layout and bluetooth options. Reset and Bootloader options for both halves of the keyboard.
 ```
 // ----------------------------------------------------------------------------------------------------------------------
-// |  RESET  |         |         |         |         |                |         | BT PREV |BT CLEAR | BT NEXT |  RESET  |
+// |  RESET  |         |         |         |         |                | OUT USB | OUT BT  |BT CLEAR |         |  RESET  |
 // |  RESET  |  GAME   |  QWERTY |  COLMAK |         |                |         |  BT 3   |   BT 4  |         |  RESET  |
 // |  BOOT   |         |         |         |         |                |         |  BT 0   |   BT 1  |   BT 2  |  BOOT   |
 //                               |         |         |                |         |         |

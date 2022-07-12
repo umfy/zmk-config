@@ -7,7 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-
+#include <dt-bindings/zmk/outputs.h>
 
 // Layer definitions
     #define COLMAK 0
@@ -35,7 +35,7 @@
         combo_caps {
             timeout-ms = <50>;
             key-positions = <6 7 8>;
-            bindings = <&kp CAPS>;
+            bindings = <&caps_word>;
         };
         
 
@@ -46,7 +46,7 @@
                 compatible = "zmk,keymap";
                 
        		default_layer {
-// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------
 // |    Q    |    W    |    F    |    P    |    B    |                |    J    |    L    |    U    |    Y    |   BSP   |
 // |    A    |    R    |    S    |    T    |    G    |                |    M    |    N    |    E    |    I    |    O    |
 // |    Z    |    X    |    C    |    D    |    V    |                |    K    |    H    |    ,    |    .    |    /    |
@@ -60,7 +60,7 @@
 		};
 
             qwerty_layer {
-// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------
 // |    Q    |    W    |    E    |    R    |    T    |                |    Y    |    U    |    I    |    O    |    P    |
 // |    A    |    S    |    D    |    F    |    G    |                |    H    |    J    |    K    |    L    |    ;    |
 // |    Z    |    X    |    C    |    V    |    B    |                |    N    |    M    |    ,    |    .    |    /    |
@@ -74,7 +74,7 @@
 		};
 
 			game_layer {
-// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------
 // |   ESC   |    Q    |    W    |    E    |    R    |                |    T    |    Y    |    U    |    I    |    O    |
 // |  LSHFT  |    A    |    S    |    D    |    F    |                |    G    |    H    |    J 	|    K    |    L    |
 // |  LCTRL  |    Z    |    X    |    C    |    V    |                |    B    |    N    |    M    |    ,    |    .    |
@@ -88,35 +88,35 @@
 		};
 
 			game_alt_layer {
-// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------
 // |    0    |    1    |    2    |    3    |    4    |                |    5    |    6    |    7    |    8    |    9    |
 // |   TAB   |    5    |    6    |    T    |    G    |                |   F5    |  COLMAK |  QWERTY |         |   F9    |
 // |   ALT   |    B    |    N    |    M    |    P    |                |         |         |         |         |         |
 //                               |         |  SPACE  |                |   TAB   |   ESC   |
 		bindings = <
 		&kp N0 &kp N1 &kp N2 &kp N3 &kp N4						&kp N5 &kp N6 &kp N7 &kp N8 &kp N9	
-		&kp TAB &kp N5 &kp N6 &kp T &kp G						&kp F5 &to COLMAK &to QWERTY &trans &kp F9
-		&kp LALT &kp B &kp N &kp M &kp P 						&trans &trans &trans &trans &trans
-					  		  &trans  &kp SPACE 				&kp TAB &kp ESC
+		&kp TAB &kp N5 &kp N6 &kp T &kp G						&kp F5 &to COLMAK &to QWERTY &none &kp F9
+		&kp LALT &kp B &kp N &kp M &kp P 						&none &none &none &none &none
+					  		  &none  &kp SPACE 				&kp TAB &kp ESC
 		>;
 		};
 
        		arrows_layer {
-// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------
 // |   ESC   |   DEL   |   BSPC  |  ENTER  | CTRL Y  |                | PG UP   |   HOME  |    ⬆    |   END   |   BSPC  |
-// |   TAB   |  LALT   |  LSHFT  |  LCTRL  |  LGUI   |                | PG DN   |    ⬅    |    ⬇    |    →    |   INS   |
+// |   TAB   |  LALT   |  LSHFT  |  LCTRL  |  LGUI   |                | PG DN   |    ⬅    |    ⬇    |    →    |   CAPS   |
 // | CTRL Z  | CTRL X  | CTRL C  | CTRL D  | CTRL V  |                |    [    |  CTL ←  |    ⬇    |  CTL →  |    ]    |
 //                               |  ENTER  |  SPACE  |                |   TAB   | NUM/ESC |
 		bindings = <
 		&kp ESC &kp DEL &kp BSPC &kp ENTER &kp LC(Y)					&kp PG_UP &kp HOME  &kp UP    &kp END   &kp BSPC 
-		&kp TAB &kp LALT &kp LSHFT &kp LCTRL &kp LGUI 	          	  	&kp PG_DN  &kp LEFT &kp DOWN &kp RIGHT &kp INS
+		&kp TAB &kp LALT &kp LSHFT &kp LCTRL &kp LGUI 	          	  	&kp PG_DN  &kp LEFT &kp DOWN &kp RIGHT &kp CAPS
 		&kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(D) &kp LC(V)				&kp LBKT &kp LC(LEFT)  &kp DOWN &kp LC(RIGHT) &kp RBKT
           			&kp ENTER &kp SPACE  								&kp TAB &lt NUMBER ESC
 		>;
 		};
 		
 		    symbol_layer {
-// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------
 // |    `    |    "    |    '    |    #    |    $    |                |    &    |    %    |    {    |    }    |   BSPC  |
 // |    _    |    -    |    +    |    =    |    \    |                |    |    |    :    |    (    |    )    |    ?    |
 // |    [    |    /    |    *    |    ]    |    @    |                |    ~    |    ;    |    <    |    >    |    !    |
@@ -125,12 +125,12 @@
 		&kp GRAVE  &kp DQT &kp SQT  &kp HASH  &kp DOLLAR    					&kp AMPS  &kp PERCENT &kp LBRC &kp RBRC &kp BSPC 
 		&kp UNDERSCORE  &kp MINUS  &kp PLUS  &kp EQUAL  &kp BACKSLASH 			&kp PIPE &kp COLON  &kp LPAR  &kp RPAR   &kp QMARK
 		&kp LBKT  &kp SLASH &kp ASTERISK &kp RBKT   &kp AT_SIGN    				&kp TILDE &kp SEMICOLON &kp LT &kp GT  &kp EXCL
-					  &lt SYSTEM ENTER &kp SPACE  										&lt NUMBER TAB   &trans 
+					  &lt SYSTEM ENTER &kp SPACE  										&lt NUMBER TAB   &none
 		>;
 		};	
 		
 		    number_layer {
-// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------
 // |   ESC   |    ,    |    .    |   ENT   |    $    |                |    0    |    7    |    8    |    9    |   BSPC  |
 // |    %    |    -    |    +    |    =    |    ^    |                |    -    |    4    |    5    |    6    |    +    |
 // |    [    |    /    |    *    |    ]    |    _    |                |    /    |    1    |    2    |    3    |    *    |
@@ -144,30 +144,30 @@
 		};	
         
        		system_layer {
-// // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |         |   PREV  |  PAUSE  |   NEXT  |         |                |         |   F7    |   F8    |   F9    |   F10   |
-// |  PSCRN  |  LALT   |  LSHFT  |  LCTRL  |  LGUI   |                |         |   F4    |   F5    |   F6    |   F11   |
-// |   MUTE  | VOL DN  |  VOL UP |  BRI UP | BRI DN  |                |         |   F1    |   F2    |   F3    |   F12   |
+// ----------------------------------------------------------------------------------------------------------------------
+// |   INS   |   PREV  |  PAUSE  |   NEXT  | CALENDAR|                |   WWW   |   F7    |   F8    |   F9    |   F10   |
+// |  PSCRN  |  LALT   |  LSHFT  |  LCTRL  |  LGUI   |                |  CALC   |   F4    |   F5    |   F6    |   F11   |
+// |   MUTE  | VOL DN  |  VOL UP |  BRI UP | BRI DN  |                |  FILES  |   F1    |   F2    |   F3    |   F12   |
 //                               |         | FMWARE  |                | FMWARE  |         |
 		bindings = <
-		&trans &kp C_PREV &kp C_PLAY_PAUSE  &kp C_NEXT &trans 					&trans &kp F7 &kp F8 &kp F9 &kp F10
-		&kp PSCRN &kp LALT &kp LSHFT &kp LCTRL &kp LGUI 						&trans  &kp F4  &kp F5 &kp F6  &kp F11 
-		&kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &kp C_BRI_DN  &kp C_BRI_UP 		&trans  &kp F1 &kp F2 &kp F3  &kp F12 
-					    &trans  &mo FMWARE  									&mo FMWARE &trans
+		&INS &kp C_PREV &kp C_PLAY_PAUSE  &kp C_NEXT &C_AL_CAL 					&C_AL_WWW &kp F7 &kp F8 &kp F9 &kp F10
+		&kp PSCRN &kp LALT &kp LSHFT &kp LCTRL &kp LGUI 						&C_AL_CALC  &kp F4  &kp F5 &kp F6  &kp F11 
+		&kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &kp C_BRI_DN  &kp C_BRI_UP 		&C_AL_FILES  &kp F1 &kp F2 &kp F3  &kp F12 
+					    &none  &mo FMWARE  										&mo FMWARE &none
 		>;
 		};
 
        		fmware_layer {
-// --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |  RESET  |         |         |         |         |                |         | BT PREV |BT CLEAR | BT NEXT |  RESET  |
+// ----------------------------------------------------------------------------------------------------------------------
+// |  RESET  |         |         |         |         |                | OUT USB | OUT BT  |BT CLEAR |         |  RESET  |
 // |  RESET  |  GAME   |  QWERTY |  COLMAK |         |                |         |  BT 3   |   BT 4  |         |  RESET  |
 // |  BOOT   |         |         |         |         |                |         |  BT 0   |   BT 1  |   BT 2  |  BOOT   |
 //                               |         |         |                |         |         |
 		bindings = <
-		&reset &trans &trans &trans &trans						&trans &bt BT_PRV &bt BT_CLR &bt BT_NXT &reset
-		&reset &to GAME &to QWERTY &to COLMAK &trans			&trans &bt BT_SEL 3 &bt BT_SEL 4 &trans &reset
-		&bootloader &trans &trans &trans &trans 				&trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bootloader 
-					  		  &trans  &trans 					&trans &trans
+		&reset &none &none &none &none						&out OUT_USB &out OUT_BLE &bt BT_CLR &none &reset
+		&reset &to GAME &to QWERTY &to COLMAK &none			&none &bt BT_SEL 3 &bt BT_SEL 4 &none &reset
+		&bootloader &none &none &none &none 				&none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bootloader 
+					  		   &none  &none 				&none &none
 		>;
 		};
 	};

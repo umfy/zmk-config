@@ -5,9 +5,9 @@
  */
 
 #include <behaviors.dtsi>
+// #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/outputs.h>
 
 // Layer definitions
     #define COLMAK 0
@@ -35,7 +35,7 @@
         combo_caps {
             timeout-ms = <50>;
             key-positions = <6 7 8>;
-            bindings = <&kp CAPS>;
+            bindings = <&caps_word>;
         };
         
 
@@ -164,7 +164,7 @@
 // |  BOOT   |         |         |         |         |                |         |  BT 0   |   BT 1  |   BT 2  |  BOOT   |
 //                               |         |         |                |         |         |
 		bindings = <
-		&reset &none &none &none &none						&out OUT_USB &out OUT_BLE &bt BT_CLR &none &reset
+		&reset &none &none &none &none						&kp A &kp B &bt BT_CLR &none &reset
 		&reset &to GAME &to QWERTY &to COLMAK &none			&none &bt BT_SEL 3 &bt BT_SEL 4 &none &reset
 		&bootloader &none &none &none &none 				&none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bootloader 
 					  		   &none  &none 				&none &none

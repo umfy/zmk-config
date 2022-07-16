@@ -108,7 +108,7 @@
 // | CTRL Z  | CTRL X  | CTRL C  | CTRL D  | CTRL V  |                |    [    |  CTL ←  |    ⬇    |  CTL →  |    ]    |
 //                               |  ENTER  |  SPACE  |                |   TAB   | NUM/ESC |
 		bindings = <
-		&kp ESC &kp DEL &kp BSPC &kp ENTER &kp LC(Y)					&kp PG_UP &kp HOME  &kp UP    &kp END   &kp BSPC 
+		&kp ESC &kp BSPC &kp DEL &kp ENTER &kp LC(Y)					&kp PG_UP &kp HOME  &kp UP    &kp END   &kp BSPC 
 		&kp TAB &kp LALT &kp LSHFT &kp LCTRL &kp LGUI 	          	  	&kp PG_DN  &kp LEFT &kp DOWN &kp RIGHT &kp CAPS
 		&kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(D) &kp LC(V)				&kp LBKT &kp LC(LEFT)  &kp DOWN &kp LC(RIGHT) &kp RBKT
           			&kp ENTER &kp SPACE  								&kp TAB &lt NUMBER ESC
@@ -117,13 +117,13 @@
 		
 		    symbol_layer {
 // ----------------------------------------------------------------------------------------------------------------------
-// |    `    |    "    |    '    |    #    |    $    |                |    &    |    %    |    {    |    }    |   BSPC  |
-// |    _    |    -    |    +    |    =    |    \    |                |    |    |    :    |    (    |    )    |    ?    |
+// |    `    |    '    |    "    |    #    |    $    |                |    &    |    %    |    (    |    )    |   BSPC  |
+// |    _    |    -    |    +    |    =    |    \    |                |    |    |    :    |    {    |    }    |    ?    |
 // |    [    |    /    |    *    |    ]    |    @    |                |    ~    |    ;    |    <    |    >    |    !    |
 //                               | SYS/ENT |  SPACE  |                | NUM/TAB |         | 
 		bindings = <
-		&kp GRAVE  &kp DQT &kp SQT  &kp HASH  &kp DOLLAR    					&kp AMPS  &kp PERCENT &kp LBRC &kp RBRC &kp BSPC 
-		&kp UNDERSCORE  &kp MINUS  &kp PLUS  &kp EQUAL  &kp BACKSLASH 			&kp PIPE &kp COLON  &kp LPAR  &kp RPAR   &kp QMARK
+		&kp GRAVE  &kp SQT &kp DQT  &kp HASH  &kp DOLLAR    					&kp AMPS  &kp PERCENT &kp LPAR &kp RPAR &kp BSPC 
+		&kp UNDERSCORE  &kp MINUS  &kp PLUS  &kp EQUAL  &kp BACKSLASH 			&kp PIPE &kp COLON &kp LBRC &kp RBRC &kp QMARK
 		&kp LBKT  &kp SLASH &kp ASTERISK &kp RBKT   &kp AT_SIGN    				&kp TILDE &kp SEMICOLON &kp LT &kp GT  &kp EXCL
 					  &lt SYSTEM ENTER &kp SPACE  										&lt NUMBER TAB   &none
 		>;
@@ -131,12 +131,12 @@
 		
 		    number_layer {
 // ----------------------------------------------------------------------------------------------------------------------
-// |   ESC   |    ,    |    .    |   ENT   |    $    |                |    0    |    7    |    8    |    9    |   BSPC  |
+// |   ESC   |    .    |    ,    |   ENT   |    $    |                |    0    |    7    |    8    |    9    |   BSPC  |
 // |    %    |    -    |    +    |    =    |    ^    |                |    -    |    4    |    5    |    6    |    +    |
 // |    [    |    /    |    *    |    ]    |    _    |                |    /    |    1    |    2    |    3    |    *    |
 //                               | FMW/ENT |  SPACE  |                |  SPACE  | SYS/0 |
 		bindings = <
-		&kp ESC &kp COMMA &kp DOT &kp ENTER &kp DOLLAR 							&kp N0 &kp N7   &kp N8   &kp N9  &kp BSPC
+		&kp ESC &kp DOT &kp COMMA &kp ENTER &kp DOLLAR 							&kp N0 &kp N7   &kp N8   &kp N9  &kp BSPC
 		&kp PERCENT &kp MINUS &kp PLUS &kp EQUAL &kp CARET						&kp MINUS &kp N4  &kp N5 &kp N6 &kp PLUS 
 		&kp LBKT  &kp SLASH &kp ASTERISK &kp RBKT &kp UNDERSCORE   				&kp SLASH &kp N1  &kp N2  &kp N3 &kp ASTERISK   
 					 &lt FMWARE ENTER &kp SPACE 								&kp SPACE &lt SYSTEM N0 

@@ -11,6 +11,7 @@ Main inspirations for this layout were [getreuer's symbol layer](https://getreue
 
 ## Colemak
 Backspace is positioned in top right on every layer.
+This layout uses homerow mods with lalt on the first layer to allow typing non-english symbols.
 
 ```
 // ----------------------------------------------------------------------------------------------------------------------
@@ -20,10 +21,10 @@ Backspace is positioned in top right on every layer.
 //                               | NUM/ENT | ARR/SPC |                | ARR/TAB | SYM/ESC |
 ```
 ## Arrows
-Ctrl + Shift + Del and text manipulation with the right hand on the mouse are possible.
+Text manipulation with the right hand on the mouse is comfortable.
 ```
 // ----------------------------------------------------------------------------------------------------------------------
-// |   ESC   |   DEL   |   BSPC  |  ENTER  | CTRL Y  |                | PG UP   |   HOME  |    ⬆    |   END   |   BSPC  |
+// |   ESC   |   BSPC  |   DEL  |  ENTER  | CTRL Y  |                | PG UP   |   HOME  |    ⬆    |   END   |   BSPC  |
 // |   TAB   |  LALT   |  LSHFT  |  LCTRL  |  LGUI   |                | PG DN   |    ⬅    |    ⬇    |    →    |   CAPS  |
 // | CTRL Z  | CTRL X  | CTRL C  | CTRL D  | CTRL V  |                |    [    |  CTL ←  |    ⬇    |  CTL →  |    ]    |
 //                               |  ENTER  |  SPACE  |                |   TAB   | NUM/ESC |
@@ -32,8 +33,8 @@ Ctrl + Shift + Del and text manipulation with the right hand on the mouse are po
 The most used symbols are in accessible places and many of the key posions are the same across multiple layers.
 ```		
 // ----------------------------------------------------------------------------------------------------------------------
-// |    `    |    "    |    '    |    #    |    $    |                |    &    |    %    |    {    |    }    |   BSPC  |
-// |    _    |    -    |    +    |    =    |    \    |                |    |    |    :    |    (    |    )    |    ?    |
+// |    `    |    '    |    "    |    #    |    $    |                |    &    |    %    |    (    |    )    |   BSPC  |
+// |    _    |    -    |    +    |    =    |    \    |                |    |    |    :    |    {    |    }    |    ?    |
 // |    [    |    /    |    *    |    ]    |    @    |                |    ~    |    ;    |    <    |    >    |    !    |
 //                               | SYS/ENT |  SPACE  |                | NUM/TAB |         | 
 ```
@@ -43,7 +44,7 @@ Enter and Escape are placed like in the Arrows layer.
 [] are here because array declaration syntax in programming uses numbers in square brackets e.g. x[0]
 ```	
 // ----------------------------------------------------------------------------------------------------------------------
-// |   ESC   |    ,    |    .    |   ENT   |    $    |                |    0    |    7    |    8    |    9    |   BSPC  |
+// |   ESC   |    .    |    ,    |   ENT   |    $    |                |    0    |    7    |    8    |    9    |   BSPC  |
 // |    %    |    -    |    +    |    =    |    ^    |                |    -    |    4    |    5    |    6    |    +    |
 // |    [    |    /    |    *    |    ]    |    _    |                |    /    |    1    |    2    |    3    |    *    |
 //                               | FMW/ENT |  SPACE  |                |  SPACE  |  SYS/0  |

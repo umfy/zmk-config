@@ -52,7 +52,7 @@ Enter and Escape are placed like in the Arrows layer.
 ## System
 ```       
 // ----------------------------------------------------------------------------------------------------------------------
-// |   INS   |   PREV  |  PAUSE  |   NEXT  | CALENDAR|                |   WWW   |   F7    |   F8    |   F9    |   F10   |
+// |   INS   |   PREV  |  PAUSE  |   NEXT  |  TEXT   |                |   WWW   |   F7    |   F8    |   F9    |   F10   |
 // |  PSCRN  |  LALT   |  LSHFT  |  LCTRL  |  LGUI   |                |  CALC   |   F4    |   F5    |   F6    |   F11   |
 // |   MUTE  | VOL DN  |  VOL UP |  BRI UP | BRI DN  |                |  FILES  |   F1    |   F2    |   F3    |   F12   |
 //                               |         | FMWARE  |                | FMWARE  |         |

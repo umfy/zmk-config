@@ -113,7 +113,7 @@
 // |   ESC   |   BSPC  |   DEL   |  ENTER  | CTRL Y  |                | PG UP   |   HOME  |    ⬆    |   END   |   BSPC  |
 // |   TAB   |  LALT   |  LSHFT  |  LCTRL  |  LGUI   |                | PG DN   |    ⬅    |    ⬇    |    →    |   CAPS  |
 // | CTRL Z  | CTRL X  | CTRL C  | CTRL D  | CTRL V  |                |    [    |  CTL ←  |    ⬇    |  CTL →  |    ]    |
-//                               |  ENTER  |  SPACE  |                |   TAB   | NUM/ESC |
+//                               |ARRM/ENTE|  SPACE  |                |   TAB   | NUM/ESC |
 		bindings = <
 		&kp ESC &kp BSPC &kp DEL &kp ENTER &kp LC(Y)					&kp PG_UP &kp HOME  &kp UP    &kp END   &kp BSPC 
 		&kp TAB &kp LALT &kp LSHFT &kp LCTRL &kp LGUI 	          	  	&kp PG_DN  &kp LEFT &kp DOWN &kp RIGHT &kp CAPS
@@ -146,7 +146,7 @@
 		&kp GRAVE  &kp SQT &kp DQT  &kp HASH  &kp DOLLAR    					&kp AMPS  &kp PERCENT &kp LPAR &kp RPAR &kp BSPC 
 		&kp UNDERSCORE  &kp MINUS  &kp PLUS  &kp EQUAL  &kp BACKSLASH 			&kp PIPE &kp COLON &kp LBRC &kp RBRC &kp QMARK
 		&kp LBKT  &kp SLASH &kp ASTERISK &kp RBKT   &kp AT_SIGN    				&kp TILDE &kp SEMICOLON &kp LT &kp GT  &kp EXCL
-					  &lt SYSTEM ENTER &lt ARROWS_MIRROR SPACE  										&lt NUMBER TAB   &none
+					  &lt SYSTEM ENTER &kp SPACE  										&lt NUMBER TAB   &none
 		>;
 		};	
 		
@@ -160,7 +160,7 @@
 		&kp ESC &kp DOT &kp COMMA &kp ENTER &kp DOLLAR 							&kp N0 &kp N7   &kp N8   &kp N9  &kp BSPC
 		&kp PERCENT &kp MINUS &kp PLUS &kp EQUAL &kp CARET						&kp MINUS &kp N4  &kp N5 &kp N6 &kp PLUS 
 		&kp LBKT  &kp SLASH &kp ASTERISK &kp RBKT &kp UNDERSCORE   				&kp SLASH &kp N1  &kp N2  &kp N3 &kp ASTERISK   
-					 &lt FMWARE ENTER &kp SPACE 								&kp SPACE &lt SYSTEM N0 
+					 &lt FMWARE ENTER &lt ARROWS_MIRROR SPACE 								&kp SPACE &lt SYSTEM N0 
 		>;
 		};	
         

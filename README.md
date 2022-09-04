@@ -27,7 +27,7 @@ Text manipulation with the right hand on the mouse is comfortable.
 // |   ESC   |   BSPC  |   DEL   |  ENTER  | CTRL Y  |                | PG UP   |   HOME  |    ⬆    |   END   |   BSPC  |
 // |   TAB   |  LALT   |  LSHFT  |  LCTRL  |  LGUI   |                | PG DN   |    ⬅    |    ⬇    |    →    |   CAPS  |
 // | CTRL Z  | CTRL X  | CTRL C  | CTRL D  | CTRL V  |                |    [    |  CTL ←  |    ⬇    |  CTL →  |    ]    |
-//                               |  ENTER  |  SPACE  |                |   TAB   | NUM/ESC |
+//                               |ARRM/ENTE|  SPACE  |                |   TAB   | NUM/ESC |
 ```
 ## Arrows mirror
 Left hand optional arrows
@@ -56,7 +56,7 @@ Enter and Escape are placed like in the Arrows layer.
 // |   ESC   |    .    |    ,    |   ENT   |    $    |                |    0    |    7    |    8    |    9    |   BSPC  |
 // |    %    |    -    |    +    |    =    |    ^    |                |    -    |    4    |    5    |    6    |    +    |
 // |    [    |    /    |    *    |    ]    |    _    |                |    /    |    1    |    2    |    3    |    *    |
-//                               | FMW/ENT |  SPACE  |                |  SPACE  |  SYS/0  |
+//                               | FMW/ENT |ARRM/SPAC|                |  SPACE  |  SYS/0  |
 ```
 ## System
 ```       

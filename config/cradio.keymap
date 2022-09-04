@@ -146,7 +146,7 @@
 		&kp GRAVE  &kp SQT &kp DQT  &kp HASH  &kp DOLLAR    					&kp AMPS  &kp PERCENT &kp LPAR &kp RPAR &kp BSPC 
 		&kp UNDERSCORE  &kp MINUS  &kp PLUS  &kp EQUAL  &kp BACKSLASH 			&kp PIPE &kp COLON &kp LBRC &kp RBRC &kp QMARK
 		&kp LBKT  &kp SLASH &kp ASTERISK &kp RBKT   &kp AT_SIGN    				&kp TILDE &kp SEMICOLON &kp LT &kp GT  &kp EXCL
-					  &lt SYSTEM ENTER &kp SPACE  										&lt NUMBER TAB   &none
+					  &lt SYSTEM ENTER &lt ARROWS_MIRROR SPACE  										&lt NUMBER TAB   &none
 		>;
 		};	
 		
@@ -155,7 +155,7 @@
 // |   ESC   |    .    |    ,    |   ENT   |    $    |                |    0    |    7    |    8    |    9    |   BSPC  |
 // |    %    |    -    |    +    |    =    |    ^    |                |    -    |    4    |    5    |    6    |    +    |
 // |    [    |    /    |    *    |    ]    |    _    |                |    /    |    1    |    2    |    3    |    *    |
-//                               | FMW/ENT |  SPACE  |                |  SPACE  | SYS/0 |
+//                               | FMW/ENT |ARRM/SPAC|                |  SPACE  | SYS/0 |
 		bindings = <
 		&kp ESC &kp DOT &kp COMMA &kp ENTER &kp DOLLAR 							&kp N0 &kp N7   &kp N8   &kp N9  &kp BSPC
 		&kp PERCENT &kp MINUS &kp PLUS &kp EQUAL &kp CARET						&kp MINUS &kp N4  &kp N5 &kp N6 &kp PLUS 

@@ -15,10 +15,11 @@
 	#define GAME 2
     #define GAMEALT 3
     #define ARROWS 4
-    #define SYMBOL 5
-    #define NUMBER 6
-    #define SYSTEM 7
-    #define FMWARE 8
+    #define ARROWS_MIRROR 5
+    #define SYMBOL 6
+    #define NUMBER 7
+    #define SYSTEM 8
+    #define FMWARE 9
 
 // -----------------
 
@@ -36,6 +37,12 @@
             timeout-ms = <50>;
             key-positions = <6 7 8>;
             bindings = <&caps_word>;
+        };
+
+		combo_enter {
+            timeout-ms = <50>;
+            key-positions = <26 27 28>;
+            bindings = <&kp ENTER>;
         };
         
 
@@ -97,13 +104,13 @@
 		&kp N0 &kp N1 &kp N2 &kp N3 &kp N4						&kp N5 &kp N6 &kp N7 &kp N8 &kp N9	
 		&kp TAB &kp N5 &kp N6 &kp T &kp G						&kp F5 &to COLMAK &to QWERTY &none &kp F9
 		&kp LALT &kp B &kp N &kp M &kp P 						&none &none &none &none &none
-					  		  &none  &kp SPACE 				&kp TAB &kp ESC
+					  		  &none  &kp SPACE 					&kp TAB &kp ESC
 		>;
 		};
 
        		arrows_layer {
 // ----------------------------------------------------------------------------------------------------------------------
-// |   ESC   |   DEL   |   BSPC  |  ENTER  | CTRL Y  |                | PG UP   |   HOME  |    ⬆    |   END   |   BSPC  |
+// |   ESC   |   BSPC  |   DEL   |  ENTER  | CTRL Y  |                | PG UP   |   HOME  |    ⬆    |   END   |   BSPC  |
 // |   TAB   |  LALT   |  LSHFT  |  LCTRL  |  LGUI   |                | PG DN   |    ⬅    |    ⬇    |    →    |   CAPS   |
 // | CTRL Z  | CTRL X  | CTRL C  | CTRL D  | CTRL V  |                |    [    |  CTL ←  |    ⬇    |  CTL →  |    ]    |
 //                               |  ENTER  |  SPACE  |                |   TAB   | NUM/ESC |
@@ -111,7 +118,21 @@
 		&kp ESC &kp BSPC &kp DEL &kp ENTER &kp LC(Y)					&kp PG_UP &kp HOME  &kp UP    &kp END   &kp BSPC 
 		&kp TAB &kp LALT &kp LSHFT &kp LCTRL &kp LGUI 	          	  	&kp PG_DN  &kp LEFT &kp DOWN &kp RIGHT &kp CAPS
 		&kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(D) &kp LC(V)				&kp LBKT &kp LC(LEFT)  &kp DOWN &kp LC(RIGHT) &kp RBKT
-          			&kp ENTER &kp SPACE  								&kp TAB &lt NUMBER ESC
+          			&lt ARROWS_MIRROR ENTER &kp SPACE  								&kp TAB &lt NUMBER ESC
+		>;
+		};
+
+       		arrows_mirror_layer {
+// ----------------------------------------------------------------------------------------------------------------------
+// |  BSPC   |   HOME  |    ⬆    |   END   |  PG UP  |				| CTRL Y  |  ENTER  |   BSPC  |   DEL   |   ESC   |
+// |  CAPS   |    ⬅    |    ⬇    |    →    |  PG DN  |				|  LGUI   |  LCTRL  |  LSHFT  |  LALT   |   TAB   |
+// |    [    |  CTL ←  |    ⬇    |  CTL →  |    ]    |				| CTRL V  | CTRL D  | CTRL C  | CTRL X  | CTRL Z  |
+// 				                 |         |         |				|   TAB   |   ESC   |
+		bindings = <
+		&kp BSPC &kp HOME &kp UP &kp END &kp PG_UP						&kp PG_UP &kp HOME  &kp UP    &kp END   &kp BSPC 
+		&kp CAPS &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN	          	  	&kp PG_DN  &kp LEFT &kp DOWN &kp RIGHT &kp CAPS
+		&kp LBKT &kp LC(LEFT)  &kp DOWN &kp LC(RIGHT) &kp RBKT			&kp LBKT &kp LC(LEFT)  &kp DOWN &kp LC(RIGHT) &kp RBKT
+          							&none &none  						&kp TAB &kp ESC
 		>;
 		};
 		

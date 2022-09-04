@@ -24,10 +24,19 @@ This layout uses homerow mods with lalt on the first layer to allow typing non-e
 Text manipulation with the right hand on the mouse is comfortable.
 ```
 // ----------------------------------------------------------------------------------------------------------------------
-// |   ESC   |   BSPC  |   DEL  |  ENTER  | CTRL Y  |                | PG UP   |   HOME  |    ⬆    |   END   |   BSPC  |
-// |   TAB   |  LALT   |  LSHFT  |  LCTRL  |  LGUI   |                | PG DN   |    ⬅    |    ⬇    |    →    |   CAPS  |
+// |   ESC   |   BSPC  |   DEL   |  ENTER  | CTRL Y  |                | PG UP   |   HOME  |    ⬆    |   END   |   BSPC  |
+// |   TAB   |  LALT   |  LSHFT  |  LCTRL  |  LGUI   |                | PG DN   |    ⬅    |    ⬇    |    →    |   CAPS   |
 // | CTRL Z  | CTRL X  | CTRL C  | CTRL D  | CTRL V  |                |    [    |  CTL ←  |    ⬇    |  CTL →  |    ]    |
 //                               |  ENTER  |  SPACE  |                |   TAB   | NUM/ESC |
+```
+## Arrows mirror
+Left hand optional arrows
+```
+// ----------------------------------------------------------------------------------------------------------------------
+// |  BSPC   |   HOME  |    ⬆    |   END   |  PG UP  |				| CTRL Y  |  ENTER  |   BSPC  |   DEL   |   ESC   |
+// |  CAPS   |    ⬅    |    ⬇    |    →    |  PG DN  |				|  LGUI   |  LCTRL  |  LSHFT  |  LALT   |   TAB   |
+// |    [    |  CTL ←  |    ⬇    |  CTL →  |    ]    |				| CTRL V  | CTRL D  | CTRL C  | CTRL X  | CTRL Z  |
+// 				                 |         |         |				|   TAB   |   ESC   |
 ```
 ## Symbol
 The most used symbols are in accessible places and many of the key posions are the same across multiple layers.

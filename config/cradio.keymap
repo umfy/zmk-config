@@ -129,9 +129,9 @@
 // |    [    |  CTL ←  |    ⬇    |  CTL →  |    ]    |				| CTRL V  | CTRL D  | CTRL C  | CTRL X  | CTRL Z  |
 // 				                 |         |         |				|   TAB   |   ESC   |
 		bindings = <
-		&kp BSPC &kp HOME &kp UP &kp END &kp PG_UP						&kp PG_UP &kp HOME  &kp UP    &kp END   &kp BSPC 
-		&kp CAPS &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN	          	  	&kp PG_DN  &kp LEFT &kp DOWN &kp RIGHT &kp CAPS
-		&kp LBKT &kp LC(LEFT)  &kp DOWN &kp LC(RIGHT) &kp RBKT			&kp LBKT &kp LC(LEFT)  &kp DOWN &kp LC(RIGHT) &kp RBKT
+		&kp BSPC &kp HOME &kp UP &kp END &kp PG_UP						&kp LC(Y) &kp ENTER  &kp BSPC  &kp DEL  &kp ESC
+		&kp CAPS &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN	          	  	&kp LGUI  &kp LCTRL &kp LSHFT &kp LALT &kp TAB
+		&kp LBKT &kp LC(LEFT)  &kp DOWN &kp LC(RIGHT) &kp RBKT			&kp LC(V) &kp LC(D)  &kp LC(C) &kp LC(X) &kp LC(Z)
           							&none &none  						&kp TAB &kp ESC
 		>;
 		};

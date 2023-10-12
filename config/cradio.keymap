@@ -50,23 +50,17 @@
     };
 
 	macros {
-		left_5: left_5 {
-        compatible = "zmk,behavior-macro";
-        label = "ZM_left_5";
-        #binding-cells = <0>;
+		   ZMK_MACRO(left_five,
         wait-ms = <30>;
         tap-ms = <30>;
         bindings = <&kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
-  		};
+    )
 
-		right_5: right_5 {
-        compatible = "zmk,behavior-macro";
-        label = "ZM_right_5";
-        #binding-cells = <0>;
+	   ZMK_MACRO(right_five,
         wait-ms = <30>;
         tap-ms = <30>;
         bindings = <&kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>;
-  		};
+    )
     };
 
 
@@ -138,7 +132,7 @@
 		bindings = <
 		&kp ESC &kp BSPC &kp DEL &kp ENTER &kp LC(Y)					&kp PG_UP &kp HOME  &kp UP    &kp END   &kp BSPC 
 		&kp TAB &kp LALT &kp LSHFT &kp LCTRL &kp LGUI 	          	  	&kp PG_DN  &kp LEFT &kp DOWN &kp RIGHT &kp CAPS
-		&kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(D) &kp LC(V)				&kp LBKT &left_5  &kp DOWN &right_5 &kp RBKT
+		&kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(D) &kp LC(V)				&kp LBKT &left_five  &kp DOWN &right_five &kp RBKT
           			&lt ARROWS_MIRROR ENTER &kp SPACE  								&kp TAB &lt NUMBER ESC
 		>;
 		};

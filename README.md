@@ -26,7 +26,7 @@ Text manipulation with the right hand on the mouse is comfortable.
 // ------------------------------------------------------------------------------------------------------------------
 // |   ESC   |   BSPC  |   DEL   |  ENTER  | CTRL Y  |            | PG UP   |   HOME  |    ⬆    |   END   |   BSPC  |
 // |   TAB   |  LALT   |  LSHFT  |  LCTRL  |  LGUI   |            | PG DN   |    ⬅    |    ⬇    |    →    |   CAPS  |
-// | CTRL Z  | CTRL X  | CTRL C  | CTRL D  | CTRL V  |            |    [    |  CTL ←  |    ⬇    |  CTL →  |    ]    |
+// | CTRL Z  | CTRL X  | CTRL C  | CTRL D  | CTRL V  |            |    [    |   5x ←  |    ⬇    |   5x →  |    ]    |
 //                               |ARRM/ENTE|  SPACE  |            |   TAB   | NUM/ESC |
 ```
 ## Arrows mirror
@@ -86,19 +86,11 @@ Select basic keyboard layout and bluetooth options. Reset and Bootloader options
 //                               | NUM/ENT | ARR/SPC |            | ARR/TAB | SYM/ESC |
 ```
 ## Gaming
-Right hand side is irrelevant
+Just to play League
 ```
 // ------------------------------------------------------------------------------------------------------------------
-// |   ESC   |    Q    |    W    |    E    |    R    |            |    T    |    Y    |    U    |    I    |    O    |
-// |  LSHFT  |    A    |    S    |    D    |    F    |            |    G    |    H    |    J    |    K    |    L    |
-// |  LCTRL  |    Z    |    X    |    C    |    V    |            |    B    |    N    |    M    |    ,    |    .    |
-//                               | GAMEALT |  SPACE  |            | ARR/TAB | SYM/ESC |
-```
-## Gaming alt
-```
-// ------------------------------------------------------------------------------------------------------------------
-// |    0    |    1    |    2    |    3    |    4    |            |    5    |    6    |    7    |    8    |    9    |
-// |   TAB   |    5    |    6    |    T    |    G    |            |   F5    |  COLMAK |  QWERTY |         |   F9    |
-// |   ALT   |    B    |    N    |    M    |    P    |            |         |         |         |         |         |
-//                               |         |  SPACE  |            |   TAB   |   ESC   |
+// |   TAB   |    1    |    2    |    3    |    4    |            |    B    |    P    |    M    |    I    |   ESC   |
+// |  LSHFT  |    Q    |    W    |    E    |    R    |            |    G    |    T    |    S 	|    J    |    A    |
+// |  LCTRL  |    5    |    6    |    D    |    F    |            |    V    |    H    |    C    |    X    |    Z    |
+//                               |  L_ALT  |  SPACE  |            | COLEMAK | COLEMAK |
 ```

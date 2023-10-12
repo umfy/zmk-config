@@ -49,17 +49,24 @@
         
     };
 
-	  macros {
-        ZMK_MACRO(left_5,
+	macros {
+		left_5: left_5 {
+        compatible = "zmk,behavior-macro";
+        label = "ZM_left_5";
+        #binding-cells = <0>;
         wait-ms = <30>;
         tap-ms = <30>;
         bindings = <&kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
-        ),
-	    ZMK_MACRO(right_5,
+  		};
+
+		right_5: right_5 {
+        compatible = "zmk,behavior-macro";
+        label = "ZM_right_5";
+        #binding-cells = <0>;
         wait-ms = <30>;
         tap-ms = <30>;
         bindings = <&kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>;
-    )
+  		};
     };
 
 

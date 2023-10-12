@@ -49,8 +49,22 @@
         
     };
 
+	  macros {
+        ZMK_MACRO(left_5,
+        wait-ms = <30>;
+        tap-ms = <30>;
+        bindings = <&kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
+        ),
+	    ZMK_MACRO(right_5,
+        wait-ms = <30>;
+        tap-ms = <30>;
+        bindings = <&kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>;
+    )
+    };
+
+
         keymap {
-                compatible = "zmk,keymap";
+        	compatible = "zmk,keymap";
                 
        		default_layer {
 // -------------------------------------------------------------------------------------------------------------------
@@ -87,10 +101,10 @@
 // |  LCTRL  |    Z    |    X    |    C    |    V    |            |    B    |    N    |    M    |    ,    |    .    |
 //                               | GAMEALT |  SPACE  |            | ARR/TAB | SYM/ESC |
 		bindings = <
-		&kp ESC &kp Q &kp W &kp E &kp R							&kp T &kp Y  &kp U  &kp I  &kp O 
-		&kp LSHFT &kp A &kp S &kp D &kp F						&kp G &kp H  &kp J  &kp K  &kp L
-		&kp LCTRL &kp Z &kp X &kp C &kp V 						&kp B &kp N  &kp M  &kp CMMA &kp DOT
-					  		  &mo GAMEALT  &kp SPACE 			&lt ARROWS TAB &lt SYMBOL ESC
+		&kp TAB &kp N1 &kp N2 &kp N3 &kp N4							&kp B &kp P  &kp U  &kp I  &kp ESC
+		&kp LSHFT &kp Q &kp W &kp E &kp R						&kp G &kp H  &kp J  &kp K  &kp L
+		&kp LCTRL &kp N5 &kp N6 &kp D &kp F 						&kp B &kp N  &kp M  &kp CMMA &kp DOT
+					  		  &kp LALT  &kp SPACE 			&lt ARROWS TAB &mo GAMEALT
 		>;
 		};
 
@@ -112,12 +126,12 @@
 // ------------------------------------------------------------------------------------------------------------------
 // |   ESC   |   BSPC  |   DEL   |  ENTER  | CTRL Y  |            | PG UP   |   HOME  |    ⬆    |   END   |   BSPC  |
 // |   TAB   |  LALT   |  LSHFT  |  LCTRL  |  LGUI   |            | PG DN   |    ⬅    |    ⬇    |    →    |   CAPS  |
-// | CTRL Z  | CTRL X  | CTRL C  | CTRL D  | CTRL V  |            |    [    |  CTL ←  |    ⬇    |  CTL →  |    ]    |
+// | CTRL Z  | CTRL X  | CTRL C  | CTRL D  | CTRL V  |            |    [    |   5 ←   |    ⬇    |   5 →   |    ]    |
 //                               |ARRM/ENTE|  SPACE  |            |   TAB   | NUM/ESC |
 		bindings = <
 		&kp ESC &kp BSPC &kp DEL &kp ENTER &kp LC(Y)					&kp PG_UP &kp HOME  &kp UP    &kp END   &kp BSPC 
 		&kp TAB &kp LALT &kp LSHFT &kp LCTRL &kp LGUI 	          	  	&kp PG_DN  &kp LEFT &kp DOWN &kp RIGHT &kp CAPS
-		&kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(D) &kp LC(V)				&kp LBKT &kp LC(LEFT)  &kp DOWN &kp LC(RIGHT) &kp RBKT
+		&kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(D) &kp LC(V)				&kp LBKT &left_5  &kp DOWN &right_5 &kp RBKT
           			&lt ARROWS_MIRROR ENTER &kp SPACE  								&kp TAB &lt NUMBER ESC
 		>;
 		};

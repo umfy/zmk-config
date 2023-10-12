@@ -29,6 +29,22 @@
 };
 
 / { 
+	macros {
+		left_5: left_5 {
+			label = "ZM_left_5";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+				= <&kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
+		};
+		right_5: right_5 {
+			label = "ZM_right_5";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+				=  <&kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>;
+		};
+	};
 
     combos {
         compatible = "zmk,combos";   
@@ -43,26 +59,8 @@
             timeout-ms = <50>;
             key-positions = <26 27 28>;
             bindings = <&kp ENTER>;
-        };
-        
-
-        
+        };  
     };
-
-	macros {
-		   ZMK_MACRO(left_five,
-        wait-ms = <30>;
-        tap-ms = <30>;
-        bindings = <&kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
-    )
-
-	   ZMK_MACRO(right_five,
-        wait-ms = <30>;
-        tap-ms = <30>;
-        bindings = <&kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>;
-    )
-    };
-
 
         keymap {
         	compatible = "zmk,keymap";
@@ -132,7 +130,7 @@
 		bindings = <
 		&kp ESC &kp BSPC &kp DEL &kp ENTER &kp LC(Y)					&kp PG_UP &kp HOME  &kp UP    &kp END   &kp BSPC 
 		&kp TAB &kp LALT &kp LSHFT &kp LCTRL &kp LGUI 	          	  	&kp PG_DN  &kp LEFT &kp DOWN &kp RIGHT &kp CAPS
-		&kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(D) &kp LC(V)				&kp LBKT &left_five  &kp DOWN &right_five &kp RBKT
+		&kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(D) &kp LC(V)				&kp LBKT &left_5  &kp DOWN &right_5 &kp RBKT
           			&lt ARROWS_MIRROR ENTER &kp SPACE  								&kp TAB &lt NUMBER ESC
 		>;
 		};

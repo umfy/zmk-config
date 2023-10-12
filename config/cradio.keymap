@@ -76,10 +76,10 @@
             //                               | NUM/ENT | ARR/SPC |            | ARR/TAB | SYM/ESC |
 
             bindings = <
-&kp Q       &kp W       &kp F        &kp P             &kp B               &kp J           &kp L           &kp U        &kp Y       &kp BSPC
-&mt LALT A  &mt RALT R  &mt LSHFT S  &mt LCTL T        &mt LGUI G          &mt LGUI M      &mt LCTL N      &mt LSHFT E  &mt RALT I  &mt LALT O
-&mt LSFT Z  &kp X       &kp C        &kp D             &kp V               &kp K           &kp H           &kp CMMA     &kp DOT     &kp SLASH
-                                     &lt NUMBER ENTER  &lt ARROWS SPACE    &lt ARROWS TAB  &lt SYMBOL ESC
+&kp Q        &kp W       &kp F        &kp P        &kp B          &kp J       &kp L        &kp U        &kp Y       &kp BSPC
+&mt LALT A   &mt RALT R  &mt LSHFT S  &mt LCTRL T  &mt LGUI G     &mt LGUI M  &mt RCTRL N  &mt LSHFT E  &mt RALT I  &mt LALT O
+&mt LSHFT Z  &kp X       &kp C        &kp D        &kp V          &kp K       &kp H        &kp COMMA    &kp DOT     &kp SLASH
+                                      &lt 5 ENTER  &lt 3 SPACE    &lt 3 TAB   &lt 4 ESC
             >;
         };
 
@@ -91,40 +91,25 @@
             //                               | NUM/ENT | ARR/SPC |            | ARR/TAB | SYM/ESC |
 
             bindings = <
-&kp Q       &kp W       &kp E        &kp R             &kp T               &kp Y           &kp U           &kp I        &kp O       &kp P
-&mt LALT A  &mt RALT S  &mt LSHFT D  &mt LCTL F        &mt LGUI G          &mt LGUI H      &mt LCTL J      &mt LSHFT K  &mt RALT L  &mt LALT SEMI
-&kp Z       &kp X       &kp C        &kp V             &kp B               &kp N           &kp M           &kp COMMA    &kp DOT     &kp SLASH
-                                     &lt NUMBER ENTER  &lt ARROWS SPACE    &lt ARROWS TAB  &lt SYMBOL ESC
+&kp Q       &kp W       &kp E        &kp R        &kp T          &kp Y       &kp U        &kp I        &kp O       &kp P
+&mt LALT A  &mt RALT S  &mt LSHFT D  &mt LCTRL F  &mt LGUI G     &mt LGUI H  &mt RCTRL J  &mt LSHFT K  &mt RALT L  &mt LALT SEMI
+&kp Z       &kp X       &kp C        &kp V        &kp B          &kp N       &kp M        &kp COMMA    &kp DOT     &kp SLASH
+                                     &lt 5 ENTER  &lt 3 SPACE    &lt 3 TAB   &lt 4 ESC
             >;
         };
 
         game_layer {
             // ------------------------------------------------------------------------------------------------------------------
-            // |   ESC   |    Q    |    W    |    E    |    R    |            |    T    |    Y    |    U    |    I    |    O    |
-            // |  LSHFT  |    A    |    S    |    D    |    F    |            |    G    |    H    |    J 	|    K    |    L    |
-            // |  LCTRL  |    Z    |    X    |    C    |    V    |            |    B    |    N    |    M    |    ,    |    .    |
-            //                               | GAMEALT |  SPACE  |            | ARR/TAB | SYM/ESC |
+            // |   TAB   |    1    |    2    |    3    |    4    |            |    B    |    P    |    M    |    I    |   ESC   |
+            // |  LSHFT  |    Q    |    W    |    E    |    R    |            |    G    |    T    |    S 	|    J    |    A    |
+            // |  LCTRL  |    5    |    6    |    D    |    F    |            |    V    |    H    |    C    |    X    |    Z    |
+            //                               |  L_ALT  |  SPACE  |            | COLEMAK | COLEMAK |
 
             bindings = <
-&kp TAB    &kp N1  &kp N2        &kp N3    &kp NUMBER_4    &kp B           &kp P           &kp U  &kp I     &kp O
-&kp LSHFT  &kp Q   &kp W         &kp E     &kp R           &kp G           &kp T           &kp J  &kp K     &kp L
-&kp LCTRL  &kp N5  &kp NUMBER_6  &kp D     &kp F           &kp H           &kp N           &kp M  &kp CMMA  &kp DOT
-                                 &kp LALT  &kp SPACE       &lt ARROWS TAB  &lt SYMBOL ESC
-            >;
-        };
-
-        game_alt_layer {
-            // ------------------------------------------------------------------------------------------------------------------
-            // |    0    |    1    |    2    |    3    |    4    |            |    5    |    6    |    7    |    8    |    9    |
-            // |   TAB   |    5    |    6    |    T    |    G    |            |   F5    |  COLMAK |  QWERTY |         |   F9    |
-            // |   ALT   |    B    |    N    |    M    |    P    |            |         |         |         |         |         |
-            //                               |         |  SPACE  |            |   TAB   |   ESC   |
-
-            bindings = <
-&kp N0    &kp N1  &kp N2  &kp N3  &kp N4       &kp N5   &kp N6      &kp N7      &kp N8  &kp N9
-&kp TAB   &kp N5  &kp N6  &kp T   &kp G        &kp F5   &to COLMAK  &to QWERTY  &none   &kp F9
-&kp LALT  &kp B   &kp N   &kp M   &kp P        &none    &none       &none       &none   &none
-                          &none   &kp SPACE    &kp TAB  &kp ESC
+&kp TAB    &kp N1  &kp N2        &kp N3    &kp NUMBER_4    &kp B  &kp P  &kp M  &kp I  &kp ESC
+&kp LSHFT  &kp Q   &kp W         &kp E     &kp R           &kp G  &kp T  &kp S  &kp J  &kp A
+&kp LCTRL  &kp N5  &kp NUMBER_6  &kp D     &kp F           &kp V  &kp H  &kp C  &kp X  &kp Z
+                                 &kp LALT  &kp SPACE       &to 0  &to 0
             >;
         };
 
@@ -136,10 +121,10 @@
             //                               |ARRM/ENTE|  SPACE  |            |   TAB   | NUM/ESC |
 
             bindings = <
-&kp ESC    &kp BSPC   &kp DEL    &kp ENTER                &kp LC(Y)    &kp PG_UP  &kp HOME        &kp UP    &kp END    &kp BSPC
-&kp TAB    &kp LALT   &kp LSHFT  &kp LCTRL                &kp LGUI     &kp PG_DN  &kp LEFT        &kp DOWN  &kp RIGHT  &kp CAPS
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(D)                &kp LC(V)    &kp LBKT   &left_5         &kp DOWN  &right_5   &kp RBKT
-                                 &lt ARROWS_MIRROR ENTER  &kp SPACE    &kp TAB    &lt NUMBER ESC
+&kp ESC    &kp BSPC   &kp DEL    &kp ENTER    &kp LC(Y)    &kp PG_UP  &kp HOME   &kp UP    &kp END    &kp BSPC
+&kp TAB    &kp LALT   &kp LSHFT  &kp LCTRL    &kp LGUI     &kp PG_DN  &kp LEFT   &kp DOWN  &kp RIGHT  &kp CAPS
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(D)    &kp LC(V)    &kp LBKT   &left_5    &kp DOWN  &right_5   &kp RBKT
+                                 &lt 6 ENTER  &kp SPACE    &kp TAB    &lt 5 ESC
             >;
         };
 
@@ -151,10 +136,10 @@
             //                               | SYS/ENT |  SPACE  |            | NUM/TAB |         | 
 
             bindings = <
-&kp GRAVE       &kp SQT    &kp DQT       &kp HASH          &kp DOLLAR       &kp AMPS        &kp AT_SIGN    &kp LPAR  &kp RPAR  &kp BSPC
-&kp UNDERSCORE  &kp MINUS  &kp PLUS      &kp EQUAL         &kp BACKSLASH    &kp PIPE        &kp COLON      &kp LBRC  &kp RBRC  &kp QMARK
-&kp LBKT        &kp SLASH  &kp ASTERISK  &kp PERCENT       &kp RBKT         &kp TILDE       &kp SEMICOLON  &kp LT    &kp GT    &kp EXCL
-                                         &lt SYSTEM ENTER  &kp SPACE        &lt NUMBER TAB  &none
+&kp GRAVE       &kp SQT    &kp DQT       &kp HASH     &kp DOLLAR       &kp AMPS   &kp AT_SIGN    &kp LPAR  &kp RPAR  &kp BSPC
+&kp UNDERSCORE  &kp MINUS  &kp PLUS      &kp EQUAL    &kp BACKSLASH    &kp PIPE   &kp COLON      &kp LBRC  &kp RBRC  &kp QMARK
+&kp LBKT        &kp SLASH  &kp ASTERISK  &kp PERCENT  &kp RBKT         &kp TILDE  &kp SEMICOLON  &kp LT    &kp GT    &kp EXCL
+                                         &lt 7 ENTER  &kp SPACE        &lt 5 TAB  &none
             >;
         };
 
@@ -166,10 +151,10 @@
             //                               | FMW/ENT |ARRM/SPAC|            |  SPACE  |  SYS/0  |
 
             bindings = <
-&kp ESC         &kp DOT    &kp COMMA     &kp ENTER         &kp DOLLAR                 &kp N0     &kp N7         &kp N8  &kp N9  &kp BSPC
-&kp UNDERSCORE  &kp MINUS  &kp PLUS      &kp EQUAL         &kp CARET                  &kp MINUS  &kp N4         &kp N5  &kp N6  &kp PLUS
-&kp LBKT        &kp SLASH  &kp ASTERISK  &kp PERCENT       &kp RBKT                   &kp SLASH  &kp N1         &kp N2  &kp N3  &kp ASTERISK
-                                         &lt FMWARE ENTER  &lt ARROWS_MIRROR SPACE    &kp SPACE  &lt SYSTEM N0
+&kp ESC         &kp DOT    &kp COMMA     &kp ENTER    &kp DOLLAR     &kp N0     &kp N7    &kp N8  &kp N9  &kp BSPC
+&kp UNDERSCORE  &kp MINUS  &kp PLUS      &kp EQUAL    &kp CARET      &kp MINUS  &kp N4    &kp N5  &kp N6  &kp PLUS
+&kp LBKT        &kp SLASH  &kp ASTERISK  &kp PERCENT  &kp RBKT       &kp SLASH  &kp N1    &kp N2  &kp N3  &kp ASTERISK
+                                         &lt 8 ENTER  &lt 6 SPACE    &kp SPACE  &lt 7 N0
             >;
         };
 
@@ -199,7 +184,7 @@
 &kp INS     &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &kp C_POWER     &kp C_AL_WWW    &kp F7  &kp F8  &kp F9  &kp F10
 &kp PSCRN   &kp LALT      &kp LSHFT         &kp LCTRL     &kp LGUI        &kp C_AL_CALC   &kp F4  &kp F5  &kp F6  &kp F11
 &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP      &kp C_BRI_DN  &kp C_BRI_UP    &kp C_AL_FILES  &kp F1  &kp F2  &kp F3  &kp F12
-                                            &none         &mo FMWARE      &mo FMWARE      &none
+                                            &none         &mo 8           &mo 8           &none
             >;
         };
 
@@ -211,10 +196,10 @@
             //                               |         |         |            |         |         |
 
             bindings = <
-&sys_reset   &none     &none       &none       &none    &out OUT_USB  &out OUT_BLE  &bt BT_CLR    &none         &sys_reset
-&sys_reset   &to GAME  &to QWERTY  &to COLMAK  &none    &none         &bt BT_SEL 3  &bt BT_SEL 4  &none         &sys_reset
-&bootloader  &none     &none       &none       &none    &none         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bootloader
-                                   &none       &none    &none         &none
+&sys_reset   &none  &none  &none  &none    &out OUT_USB  &out OUT_BLE  &bt BT_CLR    &none         &sys_reset
+&sys_reset   &to 2  &to 1  &to 0  &none    &none         &bt BT_SEL 3  &bt BT_SEL 4  &none         &sys_reset
+&bootloader  &none  &none  &none  &none    &none         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bootloader
+                           &none  &none    &none         &none
             >;
         };
     };

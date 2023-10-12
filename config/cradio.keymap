@@ -34,15 +34,19 @@
 			label = "ZM_left_5";
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
+			wait-ms = <30>;
+			tap-ms = <30>;
 			bindings
-				= <&kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
+				= <&macro_tap  &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
 		};
 		right_5: right_5 {
 			label = "ZM_right_5";
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
+			wait-ms = <30>;
+			tap-ms = <30>;
 			bindings
-				=  <&kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>;
+				=  <&macro_tap  &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>;
 		};
 	};
 

@@ -11,7 +11,7 @@ Main inspirations for this layout were [getreuer's symbol layer](https://getreue
 
 ## Colemak
 Backspace is positioned in top right on every layer.
-This layout uses homerow mods with lalt on the first layer to allow typing non-english symbols.
+This layout uses homerow mods with RALT on the first layer to allow typing non-english symbols.
 
 ```
 // ------------------------------------------------------------------------------------------------------------------

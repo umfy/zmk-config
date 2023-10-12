@@ -52,16 +52,12 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
             label = "LEFT_5";
-            wait-ms = <30>;
-            tap-ms = <30>;
         };
         right_5: right_5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>;
             label = "RIGHT_5";
-            wait-ms = <30>;
-            tap-ms = <30>;
         };
     };
 

@@ -14,7 +14,7 @@
 #define COLMAK 0
 #define QWERTY 1
 #define GAME 2
-#define GAME_ALT 4
+#define GAME_ALT 3
 #define ARROWS 4
 #define SYMBOL 5
 #define NUMBER 6
@@ -109,7 +109,7 @@
 &kp TAB    &kp N1  &kp N2        &kp N3    &kp NUMBER_4    &kp B  &kp P  &kp M  &kp I  &kp ESC
 &kp LSHFT  &kp Q   &kp W         &kp E     &kp R           &kp G  &kp T  &kp S  &kp J  &kp A
 &kp LCTRL  &kp N5  &kp NUMBER_6  &kp D     &kp F           &kp V  &kp H  &kp C  &kp X  &kp Z
-                                 &kp LALT  &kp SPACE       &to 0  &to 0
+                                 &kp LALT  &kp SPACE       &to 3  &to 0
             >;
         };
 
@@ -124,7 +124,7 @@
 &kp ESC    &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp F16        &kp F13  &kp F7  &kp F8  &kp F9  &kp F10
 &kp TAB    &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp F17        &kp F14  &kp F4  &kp F5  &kp F6  &kp F11
 &kp ENTER  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp F18        &kp F15  &kp F1  &kp F2  &kp F3  &kp F12
-                                 &kp LALT  &kp LCTRL       &to 2  &kp LSH 
+                                 &kp LALT  &kp LCTRL       &to 2  &kp LSHFT
             >;
         };
 
@@ -190,16 +190,16 @@
 
         system_layer {
             // ------------------------------------------------------------------------------------------------------------------
-            // |   INS   |   PREV  |  PAUSE  |   NEXT  |  POWER  |            |   WWW   |   F7    |   F8    |   F9    |   F10   |
+            // |   INS   |   PREV  |  PAUSE  |   NEXT  | NUMLOCK |            |   WWW   |   F7    |   F8    |   F9    |   F10   |
             // |  PSCRN  |  LALT   |  LSHFT  |  LCTRL  |  LGUI   |            |  CALC   |   F4    |   F5    |   F6    |   F11   |
             // |   MUTE  | VOL DN  |  VOL UP |  BRI UP | BRI DN  |            |  FILES  |   F1    |   F2    |   F3    |   F12   |
             //                               |         | FMWARE  |            | FMWARE  |         |
 
             bindings = <
-&kp INS     &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &kp C_POWER     &kp C_AL_WWW    &kp F7  &kp F8  &kp F9  &kp F10
+&kp INS     &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &kp KP_NLCK     &kp C_AL_WWW    &kp F7  &kp F8  &kp F9  &kp F10
 &kp PSCRN   &kp LALT      &kp LSHFT         &kp LCTRL     &kp LGUI        &kp C_AL_CALC   &kp F4  &kp F5  &kp F6  &kp F11
 &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP      &kp C_BRI_DN  &kp C_BRI_UP    &kp C_AL_FILES  &kp F1  &kp F2  &kp F3  &kp F12
-                                            &none         &mo 8           &mo 8           &none
+                                            &none         &mo 9           &mo 9           &none
             >;
         };
 

@@ -14,7 +14,7 @@
 #define COLMAK 0
 #define QWERTY 1
 #define GAME 2
-#define GAMEALT 3
+#define GAME_ALT 4
 #define ARROWS 4
 #define SYMBOL 5
 #define NUMBER 6
@@ -79,7 +79,7 @@
 &kp Q        &kp W       &kp F        &kp P        &kp B          &kp J       &kp L        &kp U        &kp Y       &kp BSPC
 &mt LALT A   &mt RALT R  &mt LSHFT S  &mt LCTRL T  &mt LGUI G     &mt LGUI M  &mt RCTRL N  &mt LSHFT E  &mt RALT I  &mt LALT O
 &mt LSHFT Z  &kp X       &kp C        &kp D        &kp V          &kp K       &kp H        &kp COMMA    &kp DOT     &kp SLASH
-                                      &lt 5 ENTER  &lt 3 SPACE    &lt 3 TAB   &lt 4 ESC
+                                      &lt 6 ENTER  &lt 4 SPACE    &lt 4 TAB   &lt 5 ESC
             >;
         };
 
@@ -94,7 +94,7 @@
 &kp Q       &kp W       &kp E        &kp R        &kp T          &kp Y       &kp U        &kp I        &kp O       &kp P
 &mt LALT A  &mt RALT S  &mt LSHFT D  &mt LCTRL F  &mt LGUI G     &mt LGUI H  &mt RCTRL J  &mt LSHFT K  &mt RALT L  &mt LALT SEMI
 &kp Z       &kp X       &kp C        &kp V        &kp B          &kp N       &kp M        &kp COMMA    &kp DOT     &kp SLASH
-                                     &lt 5 ENTER  &lt 3 SPACE    &lt 3 TAB   &lt 4 ESC
+                                     &lt 6 ENTER  &lt 4 SPACE    &lt 4 TAB   &lt 5 ESC
             >;
         };
 
@@ -109,7 +109,7 @@
 &kp TAB    &kp N1  &kp N2        &kp N3    &kp NUMBER_4    &kp B  &kp P  &kp M  &kp I  &kp ESC
 &kp LSHFT  &kp Q   &kp W         &kp E     &kp R           &kp G  &kp T  &kp S  &kp J  &kp A
 &kp LCTRL  &kp N5  &kp NUMBER_6  &kp D     &kp F           &kp V  &kp H  &kp C  &kp X  &kp Z
-                                 &kp LALT  &kp SPACE       &to 3  &to 0
+                                 &kp LALT  &kp SPACE       &to 0  &to 0
             >;
         };
 
@@ -124,7 +124,7 @@
 &kp ESC    &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp F16        &kp F13  &kp F7  &kp F8  &kp F9  &kp F10
 &kp TAB    &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp F17        &kp F14  &kp F4  &kp F5  &kp F6  &kp F11
 &kp ENTER  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp F18        &kp F15  &kp F1  &kp F2  &kp F3  &kp F12
-                                 &kp LALT  &kp LCTRL       &to 2  &kp LSHFT 
+                                 &kp LALT  &kp LCTRL       &to 2  &kp LSH 
             >;
         };
 
@@ -139,7 +139,7 @@
 &kp ESC    &kp BSPC   &kp DEL    &kp ENTER    &kp LC(Y)    &kp PG_UP  &kp HOME   &kp UP    &kp END    &kp BSPC
 &kp TAB    &kp LALT   &kp LSHFT  &kp LCTRL    &kp LGUI     &kp PG_DN  &kp LEFT   &kp DOWN  &kp RIGHT  &kp CAPS
 &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(D)    &kp LC(V)    &kp LBKT   &left_5    &kp DOWN  &right_5   &kp RBKT
-                                 &lt 6 ENTER  &kp SPACE    &kp TAB    &lt 5 ESC
+                                 &lt 7 ENTER  &kp SPACE    &kp TAB    &lt 6 ESC
             >;
         };
 
@@ -154,7 +154,7 @@
 &kp GRAVE       &kp SQT    &kp DQT       &kp HASH     &kp DOLLAR       &kp AMPS   &kp AT_SIGN    &kp LPAR  &kp RPAR  &kp BSPC
 &kp UNDERSCORE  &kp MINUS  &kp PLUS      &kp EQUAL    &kp BACKSLASH    &kp PIPE   &kp COLON      &kp LBRC  &kp RBRC  &kp QMARK
 &kp LBKT        &kp SLASH  &kp ASTERISK  &kp PERCENT  &kp RBKT         &kp TILDE  &kp SEMICOLON  &kp LT    &kp GT    &kp EXCL
-                                         &lt 7 ENTER  &kp SPACE        &lt 5 TAB  &none
+                                         &lt 8 ENTER  &kp SPACE        &lt 6 TAB  &none
             >;
         };
 
@@ -169,7 +169,7 @@
 &kp ESC         &kp DOT    &kp COMMA     &kp ENTER    &kp DOLLAR     &kp N0     &kp N7    &kp N8  &kp N9  &kp BSPC
 &kp UNDERSCORE  &kp MINUS  &kp PLUS      &kp EQUAL    &kp CARET      &kp MINUS  &kp N4    &kp N5  &kp N6  &kp PLUS
 &kp LBKT        &kp SLASH  &kp ASTERISK  &kp PERCENT  &kp RBKT       &kp SLASH  &kp N1    &kp N2  &kp N3  &kp ASTERISK
-                                         &lt 8 ENTER  &lt 6 SPACE    &kp SPACE  &lt 7 N0
+                                         &lt 9 ENTER  &lt 7 SPACE    &kp SPACE  &lt 8 N0
             >;
         };
 

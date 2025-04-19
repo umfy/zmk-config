@@ -71,7 +71,7 @@ Enter and Escape are placed like in the Arrows layer.
 Select basic keyboard layout and bluetooth options. Reset and Bootloader options for both halves of the keyboard.
 ```
 // ------------------------------------------------------------------------------------------------------------------
-// |  RESET  |         |         |         |         |            | OUT USB | OUT BT  |BT CLEAR |         |  RESET  |
+// |  RESET  |GAME_ALT |         |         |         |            | OUT USB | OUT BT  |BT CLEAR |         |  RESET  |
 // |  RESET  |  GAME   |  QWERTY |  COLMAK |         |            |         |  BT 3   |   BT 4  |         |  RESET  |
 // |  BOOT   |         |         |         |         |            |         |  BT 0   |   BT 1  |   BT 2  |  BOOT   |
 //                               |         |         |            |         |         |
@@ -86,11 +86,20 @@ Select basic keyboard layout and bluetooth options. Reset and Bootloader options
 //                               | NUM/ENT | ARR/SPC |            | ARR/TAB | SYM/ESC |
 ```
 ## Gaming
-Just to play League
+League of Legends
 ```
 // ------------------------------------------------------------------------------------------------------------------
 // |   TAB   |    1    |    2    |    3    |    4    |            |    B    |    P    |    M    |    I    |   ESC   |
 // |  LSHFT  |    Q    |    W    |    E    |    R    |            |    G    |    T    |    S 	|    J    |    A    |
 // |  LCTRL  |    5    |    6    |    D    |    F    |            |    V    |    H    |    C    |    X    |    Z    |
-//                               |  L_ALT  |  SPACE  |            | COLEMAK | COLEMAK |
+//                               |  L_ALT  |  SPACE  |            |GAME_ALT | COLEMAK |
+```
+## Gaming alt
+Tibia
+```
+// ------------------------------------------------------------------------------------------------------------------
+// |   ESC   |    N7   |    N8   |    N9   |   F16   |            |   F13   |   F7    |   F8    |   F9    |   F10   |
+// |   TAB   |    N4   |    N5   |    N6   |   F17   |            |   F14   |   F4    |   F5 	|   F6    |   F11   |
+// |  ENTER  |    N1   |    N2   |    N3   |   F18   |            |   F15   |   F1    |   F2    |   F3    |   F12   |
+//                               |  L_ALT  |   CTRL  |            |   GAME  |  SHIFT  |
 ```
